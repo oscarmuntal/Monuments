@@ -11,4 +11,7 @@ import Viperit
 
 class MonumentsDisplayData: DisplayData {
 
+    let monumentTableViewCell = "monumentTableViewCell"
+    let screenName = "Monuments"
+    
 }

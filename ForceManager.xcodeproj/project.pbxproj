@@ -23,6 +23,8 @@
 		1F79AD7C201A5A8E003FA1E3 /* MonumentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79AD76201A5A8E003FA1E3 /* MonumentsInteractor.swift */; };
 		1F79AD7D201A5A8E003FA1E3 /* MonumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79AD77201A5A8E003FA1E3 /* MonumentsView.swift */; };
 		1F79AD80201A5AC3003FA1E3 /* AppModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79AD7F201A5AC3003FA1E3 /* AppModules.swift */; };
+		1F79AD84201A5D73003FA1E3 /* MonumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79AD82201A5D73003FA1E3 /* MonumentTableViewCell.swift */; };
+		1F79AD85201A5D73003FA1E3 /* MonumentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F79AD83201A5D73003FA1E3 /* MonumentTableViewCell.xib */; };
 		2E412D762E3CD76CA06E7EB9 /* Pods_ForceManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32415E01678DEA5BDDB1C13 /* Pods_ForceManagerUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		1F79AD76201A5A8E003FA1E3 /* MonumentsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentsInteractor.swift; sourceTree = "<group>"; };
 		1F79AD77201A5A8E003FA1E3 /* MonumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentsView.swift; sourceTree = "<group>"; };
 		1F79AD7F201A5AC3003FA1E3 /* AppModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModules.swift; sourceTree = "<group>"; };
+		1F79AD82201A5D73003FA1E3 /* MonumentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentTableViewCell.swift; sourceTree = "<group>"; };
+		1F79AD83201A5D73003FA1E3 /* MonumentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonumentTableViewCell.xib; sourceTree = "<group>"; };
 		34EF83F1BCE5DE8456BC9CD5 /* Pods-ForceManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForceManagerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForceManagerUITests/Pods-ForceManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3EF2F0CDD1A45B1381676F31 /* Pods-ForceManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForceManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForceManagerTests/Pods-ForceManagerTests.release.xcconfig"; sourceTree = "<group>"; };
 		4D6E900FCE4F7E12E2D7983C /* Pods-ForceManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForceManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForceManager/Pods-ForceManager.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 		1F79AD7E201A5A9D003FA1E3 /* Monuments */ = {
 			isa = PBXGroup;
 			children = (
+				1F79AD81201A5D5A003FA1E3 /* Cells */,
 				1F79AD72201A5A8E003FA1E3 /* Monuments.storyboard */,
 				1F79AD73201A5A8E003FA1E3 /* MonumentsDisplayData.swift */,
 				1F79AD74201A5A8E003FA1E3 /* MonumentsPresenter.swift */,
@@ -177,6 +182,15 @@
 				1F79AD77201A5A8E003FA1E3 /* MonumentsView.swift */,
 			);
 			path = Monuments;
+			sourceTree = "<group>";
+		};
+		1F79AD81201A5D5A003FA1E3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1F79AD82201A5D73003FA1E3 /* MonumentTableViewCell.swift */,
+				1F79AD83201A5D73003FA1E3 /* MonumentTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		9D86E1C7CB28E71EAB884FA9 /* Frameworks */ = {
@@ -322,6 +336,7 @@
 				1F79AD78201A5A8E003FA1E3 /* Monuments.storyboard in Resources */,
 				1F79AD4B201A5918003FA1E3 /* Assets.xcassets in Resources */,
 				1F79AD49201A5918003FA1E3 /* Main.storyboard in Resources */,
+				1F79AD85201A5D73003FA1E3 /* MonumentTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +511,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F79AD84201A5D73003FA1E3 /* MonumentTableViewCell.swift in Sources */,
 				1F79AD46201A5918003FA1E3 /* ViewController.swift in Sources */,
 				1F79AD7C201A5A8E003FA1E3 /* MonumentsInteractor.swift in Sources */,
 				1F79AD7A201A5A8E003FA1E3 /* MonumentsPresenter.swift in Sources */,

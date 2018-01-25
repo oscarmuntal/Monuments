@@ -20,8 +20,37 @@
                     <view key="view" contentMode="scaleToFill" id="kgt-o0-aP8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.038229439480000002" green="0.81753008019999995" blue="0.081952959180000007" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dGP-4L-v0h">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="monumentTableViewCell" id="RWj-bL-7LW" customClass="MonumentTableViewCell" customModule="ForceManager" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RWj-bL-7LW" id="ODM-Ee-7UG">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="xqD-av-Raz" id="DuJ-7R-Z9D"/>
+                                    <outlet property="delegate" destination="xqD-av-Raz" id="gVP-XV-Rxu"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dGP-4L-v0h" firstAttribute="top" secondItem="EcR-ye-kTk" secondAttribute="bottom" id="PAv-CO-lIV"/>
+                            <constraint firstAttribute="trailing" secondItem="dGP-4L-v0h" secondAttribute="trailing" id="Th7-zF-H7Y"/>
+                            <constraint firstItem="vb6-4r-Epx" firstAttribute="top" secondItem="dGP-4L-v0h" secondAttribute="bottom" id="pyJ-OJ-cUc"/>
+                            <constraint firstItem="dGP-4L-v0h" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" id="rBV-sG-BkJ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="dGP-4L-v0h" id="HvS-8y-ACd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nXm-AG-NXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
