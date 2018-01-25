@@ -1,12 +1,15 @@
 PODS:
+  - SwiftyJSON (4.0.0)
   - Viperit (1.0.0)
 
 DEPENDENCIES:
+  - SwiftyJSON
   - Viperit
 
 SPEC CHECKSUMS:
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   Viperit: 9b4b2614a2e3806cb2a86b99715f7b71b6486d65
 
-PODFILE CHECKSUM: dfd750fedeb158c76923eb284ebf539ade1caa85
+PODFILE CHECKSUM: ca1145406bf003cd07bdd25ae08e7dca4d3b7211
 
 COCOAPODS: 1.4.0

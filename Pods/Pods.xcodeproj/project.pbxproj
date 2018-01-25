@@ -7,109 +7,136 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EEDDDB931E6CCF2B26F162001DEF061 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C771FAA1A72E17C27C64CD70B1C31B9C /* Interactor.swift */; };
-		121151395668F5920C68EFCDC7226FA6 /* ViperitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3877FDC2BCC29A9304FA0E4CB64BAF /* ViperitError.swift */; };
-		22CD6AA3855944B8F8D5CCF18B9865A9 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40DD5D1C72D862082211D9E19BBAFBD /* String+.swift */; };
+		07DA55679667378E39CB5C2B9F5181D4 /* UserInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DF6DE69E74060215B7AD4EF56C5396 /* UserInterface.swift */; };
+		0E5E1CE965C1A5760E6A0D2F7E24B929 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45CC12F2F1BCAACB465F0E2BF1FE249 /* Interactor.swift */; };
+		1F0C704C5CFAE52A707C432914D9BD67 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D31F4B5E9C96F25DA9844F1E352D9B1 /* Module.swift */; };
+		3C83320C8835483BD008C5AC7163D178 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1105A276332E5B383AD692A7EAB7A9 /* Presenter.swift */; };
+		4041E69C550BDD6EDCC8087098AC50C7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719EAA27D7175699926114948D31504C /* Router.swift */; };
+		42C338BB0275B0FEE2C67603AD3A2592 /* ViperComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EB9B514C735C0C9A03C613807D6D60 /* ViperComponent.swift */; };
+		4931BE0C47B86C8F155CC5CD75432E20 /* Viperit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAD603751C3B59F6488FCD1BBFE1C3 /* Viperit-dummy.m */; };
 		4F72544958428E349186ED46CA7F8C3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		72BC92B0BAEAF0CA5BB69851806735C2 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DD4BE592D17014DC43E1E3E57B7C86 /* Module.swift */; };
-		8341CF62A3B6A27AEB969EE2D3247812 /* Viperit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DC129046403C97FB5257EEF523C91A0 /* Viperit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		835A27D23684304F87A5D70882EC8220 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		83CD2DFE601727E096546C37CAEB445F /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1E48ABC7DB25C319F349AD43DA64C /* Presenter.swift */; };
-		87BAD4D0D8A7220317533845F6280569 /* Pods-ForceManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F865B0C3EC2D5258E3FD47723A12350 /* Pods-ForceManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B1FCAC0E942BB25F6CFEDCBD4BC44293 /* ViperComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07126943F1D8309757AE7F2954946FB /* ViperComponent.swift */; };
+		702C81B1DCA7E313AE5D2C7F4C054A4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		898865939E717481F95DACD4F6C93129 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		978AC1EBF0AF3DDF3D3039994E525E15 /* Viperit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA1CB29771EEF057C9FC6F20822C1155 /* Viperit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B2578D7CB6D4108050558FFD9A96B77 /* Pods-ForceManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF30BA49596AA071E304516C422B2B1 /* Pods-ForceManager-dummy.m */; };
+		9DA5DDA08D80BE746F1E51D6ECA6DDA6 /* ViperitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E6FDFE4288A5FEF94EA87E150B66BE /* ViperitError.swift */; };
+		AA2E45BB3511F44789F398EEB24C2BED /* Pods-ForceManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F865B0C3EC2D5258E3FD47723A12350 /* Pods-ForceManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B24A26DFA55E4E01E7EF4477219A5FBB /* ViperitModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05348F458D30AC489C7678664A5A8E4 /* ViperitModule.swift */; };
 		C1BBEBACEB3535AB796F187E74CD28B3 /* Pods-ForceManagerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F2F90AB4A0AB603FF0A2B501604A11 /* Pods-ForceManagerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C70843BFD15D754E4FD89FC504F9EDD9 /* Pods-ForceManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF30BA49596AA071E304516C422B2B1 /* Pods-ForceManager-dummy.m */; };
 		CAB5F13E05ABEF627F326BC1A0D9D210 /* Pods-ForceManagerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99ECA1665FC1F9999420FF4C994F2B8B /* Pods-ForceManagerUITests-dummy.m */; };
 		CDAB08AC9AF8E9179F3EA6F2DC494B86 /* Pods-ForceManagerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59435F568AC3CF12A73D45EC596E60BE /* Pods-ForceManagerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D00381F6B64FC35A2ACBDAC7CA8D5B91 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71590BE1AC41BFDEC894D93274884F1B /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3AE513E9B3FBD611087C28D61122884 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		D7475E16839A7E38B45CFC97B109EE99 /* UserInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32B210AFA5160A5F16567D07F8CBD39 /* UserInterface.swift */; };
-		E82E3073BD0C5393A0123751940BA448 /* ViperitModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A04983E64B7E4FF4C28DF57190FDA6 /* ViperitModule.swift */; };
-		E8376CCAA7013E2E675CDE2149964603 /* DisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B28C5A8315D1D71D178857370DA0598 /* DisplayData.swift */; };
-		EF5D372668FF5D09A37B00DDE693489B /* Viperit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6218D4BCCBF81D48BB8BC35D5D30A1 /* Viperit-dummy.m */; };
-		F8DCE5BD0C57E92807F206BF72C979D8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB3A9A0407D4E038A3278E46908794 /* Router.swift */; };
-		FCD0407C856BDFF5C9F3BB4F34E6843C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		DCC2F3A164B87B175EA054F3DFB509C2 /* DisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4E58FD4858C216F1130355951F831B /* DisplayData.swift */; };
+		EE86E11CB51425295DB1BFA91BABD404 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		F393613453EA5BC0236FF5AD96115089 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3550E1F309B9944DA39804D8A20A0E2 /* SwiftyJSON-dummy.m */; };
+		F5B249F0D485CF86189D9B35D15640DD /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D35FDF5B21157E2C29E88A3EF3B8E04 /* SwiftyJSON.swift */; };
+		FBD3FE87576EBE4A39531E8FC9DEBA26 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F3306131F622163837F2137987E03 /* String+.swift */; };
 		FF826F196842F4932DFE3E4DBB05C58A /* Pods-ForceManagerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C012283C970C95A604E130FC710ECCF /* Pods-ForceManagerTests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4622EAFF07F12F785993541CC05F045A /* PBXContainerItemProxy */ = {
+		4F01100F75CBBD850CA0033CF975A93C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 15992B261453F0FEDB32F981C5E05A7C;
+			remoteGlobalIDString = 5718D7F2CD2441403621F4B1CEB83D47;
+			remoteInfo = SwiftyJSON;
+		};
+		CB38C4AE0343B8261A4F1F0364C87A18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CFB5C04874E005D37E3281443AE733D;
 			remoteInfo = Viperit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0152A43F5AEE4848C1483A0F05624A5B /* Pods_ForceManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ForceManagerUITests.framework; path = "Pods-ForceManagerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0748064615FA666696D4F3B7116D8CB1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09775ED197EEF40B91066E508E7F9DD7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BBCB2C93A386524116C27A850291A59 /* Pods-ForceManagerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ForceManagerTests-resources.sh"; sourceTree = "<group>"; };
 		0F865B0C3EC2D5258E3FD47723A12350 /* Pods-ForceManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ForceManager-umbrella.h"; sourceTree = "<group>"; };
+		1B1105A276332E5B383AD692A7EAB7A9 /* Presenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Presenter.swift; path = Viperit/Core/Presenter.swift; sourceTree = "<group>"; };
+		1DA3CED144452EFAE5CA4DBB81EB32FE /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		21DF6DE69E74060215B7AD4EF56C5396 /* UserInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInterface.swift; path = Viperit/Core/UserInterface.swift; sourceTree = "<group>"; };
 		2832DA28A12A7FAFB33CBBD5DEB5A661 /* Pods-ForceManagerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ForceManagerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2A86660CAB7DE43EF318295CE0BF91D1 /* Pods_ForceManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ForceManager.framework; path = "Pods-ForceManager.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C012283C970C95A604E130FC710ECCF /* Pods-ForceManagerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ForceManagerTests-dummy.m"; sourceTree = "<group>"; };
+		2D35FDF5B21157E2C29E88A3EF3B8E04 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		2D4E58FD4858C216F1130355951F831B /* DisplayData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DisplayData.swift; path = Viperit/Core/DisplayData.swift; sourceTree = "<group>"; };
+		36EB9B514C735C0C9A03C613807D6D60 /* ViperComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViperComponent.swift; path = Viperit/Core/ViperComponent.swift; sourceTree = "<group>"; };
 		38EB80FBDD5472037E8FC51B35500318 /* Pods-ForceManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ForceManager.modulemap"; sourceTree = "<group>"; };
 		3B70C541C12ED29BD3B013DB473A9586 /* Pods-ForceManagerUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ForceManagerUITests-resources.sh"; sourceTree = "<group>"; };
 		3BF30BA49596AA071E304516C422B2B1 /* Pods-ForceManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ForceManager-dummy.m"; sourceTree = "<group>"; };
-		3D3877FDC2BCC29A9304FA0E4CB64BAF /* ViperitError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViperitError.swift; path = Viperit/Core/ViperitError.swift; sourceTree = "<group>"; };
-		45205418640D881499CBEB3ED6528BEF /* Viperit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Viperit.xcconfig; sourceTree = "<group>"; };
-		4A6218D4BCCBF81D48BB8BC35D5D30A1 /* Viperit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Viperit-dummy.m"; sourceTree = "<group>"; };
+		3D31F4B5E9C96F25DA9844F1E352D9B1 /* Module.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Module.swift; path = Viperit/Core/Module.swift; sourceTree = "<group>"; };
+		419B8B384EFDE09815252C0B824CDD69 /* Viperit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Viperit-prefix.pch"; sourceTree = "<group>"; };
 		4E9407FCAF11CB444369473A392B21A5 /* Pods-ForceManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ForceManager.release.xcconfig"; sourceTree = "<group>"; };
-		582873CF087F3BD3335262CBA296AEBD /* Viperit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Viperit.framework; path = Viperit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F36F025B9AC521C810593E8EF858EFE /* Viperit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Viperit.modulemap; sourceTree = "<group>"; };
 		58735B451F7ABB491D48D0FEB51C05C9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		58B2BE4A698B610B1DE309057B81743C /* Viperit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Viperit-prefix.pch"; sourceTree = "<group>"; };
+		593DADA364F9B48461DBDC0FCF7CF0BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59435F568AC3CF12A73D45EC596E60BE /* Pods-ForceManagerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ForceManagerUITests-umbrella.h"; sourceTree = "<group>"; };
 		60528BFDA4D7BF8A4BF500A8733607B2 /* Pods-ForceManagerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ForceManagerTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		78E1E48ABC7DB25C319F349AD43DA64C /* Presenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Presenter.swift; path = Viperit/Core/Presenter.swift; sourceTree = "<group>"; };
-		79A1E7B79C6C24BE80A723BEC947E57B /* Pods_ForceManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ForceManagerTests.framework; path = "Pods-ForceManagerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71590BE1AC41BFDEC894D93274884F1B /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		719EAA27D7175699926114948D31504C /* Router.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Router.swift; path = Viperit/Core/Router.swift; sourceTree = "<group>"; };
+		7A9F3306131F622163837F2137987E03 /* String+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+.swift"; path = "Viperit/Extensions/String+.swift"; sourceTree = "<group>"; };
+		8645A0B9C92B327CA6786F81AEA971AF /* Viperit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Viperit.framework; path = Viperit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88283D2F0DDB7005D02F5FF6E3A08A3F /* Pods-ForceManagerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ForceManagerUITests-frameworks.sh"; sourceTree = "<group>"; };
 		8C3ECD42AAF266B94E27840674169641 /* Pods-ForceManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ForceManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
-		8DC129046403C97FB5257EEF523C91A0 /* Viperit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Viperit-umbrella.h"; sourceTree = "<group>"; };
 		8F91A481551056BF4EBA906CAFD509D1 /* Pods-ForceManager-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ForceManager-resources.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97AAD603751C3B59F6488FCD1BBFE1C3 /* Viperit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Viperit-dummy.m"; sourceTree = "<group>"; };
 		99ECA1665FC1F9999420FF4C994F2B8B /* Pods-ForceManagerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ForceManagerUITests-dummy.m"; sourceTree = "<group>"; };
-		9B28C5A8315D1D71D178857370DA0598 /* DisplayData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DisplayData.swift; path = Viperit/Core/DisplayData.swift; sourceTree = "<group>"; };
 		9E829A6B95C23D67966D05B95582F465 /* Pods-ForceManagerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ForceManagerUITests.modulemap"; sourceTree = "<group>"; };
-		A07126943F1D8309757AE7F2954946FB /* ViperComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViperComponent.swift; path = Viperit/Core/ViperComponent.swift; sourceTree = "<group>"; };
+		A4524BFB8E41639121BFD4C087910767 /* Pods_ForceManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ForceManagerTests.framework; path = "Pods-ForceManagerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6610E49687D50F9068B3CB0769D362E /* Pods-ForceManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ForceManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A852F883CCDDAD7A738CD98927A7AAEF /* Pods-ForceManager-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ForceManager-acknowledgements.plist"; sourceTree = "<group>"; };
-		AD210162BCECE88093EB537FFD9954C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A936358BA88127F27722746C49BF7953 /* Pods_ForceManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ForceManager.framework; path = "Pods-ForceManager.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B05348F458D30AC489C7678664A5A8E4 /* ViperitModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViperitModule.swift; path = Viperit/Core/ViperitModule.swift; sourceTree = "<group>"; };
 		B0BCF2626484F5E36E12415FDBEC9905 /* Pods-ForceManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ForceManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B1EC7913644D462E17A24C3AB3EBDD84 /* Pods-ForceManagerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ForceManagerTests.modulemap"; sourceTree = "<group>"; };
-		B32B210AFA5160A5F16567D07F8CBD39 /* UserInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInterface.swift; path = Viperit/Core/UserInterface.swift; sourceTree = "<group>"; };
 		B45871BAF0024AB2B314368971CEE708 /* Pods-ForceManager-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ForceManager-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B45CC12F2F1BCAACB465F0E2BF1FE249 /* Interactor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interactor.swift; path = Viperit/Core/Interactor.swift; sourceTree = "<group>"; };
 		B6C604D9D493F8A1574C4B1D0AAAD736 /* Pods-ForceManager-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ForceManager-frameworks.sh"; sourceTree = "<group>"; };
-		B6DD4BE592D17014DC43E1E3E57B7C86 /* Module.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Module.swift; path = Viperit/Core/Module.swift; sourceTree = "<group>"; };
+		B79709B09670333EB5694326A68FDAD5 /* Viperit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Viperit.xcconfig; sourceTree = "<group>"; };
 		B854FA5F7A2378DC86379496C8E9386D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C771FAA1A72E17C27C64CD70B1C31B9C /* Interactor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interactor.swift; path = Viperit/Core/Interactor.swift; sourceTree = "<group>"; };
+		C4E6FDFE4288A5FEF94EA87E150B66BE /* ViperitError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViperitError.swift; path = Viperit/Core/ViperitError.swift; sourceTree = "<group>"; };
 		CA8AAAF871D50875538AFBF59E0185A4 /* Pods-ForceManagerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ForceManagerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CF604D9BE492520A10315C6F4DDEFDCC /* Pods-ForceManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ForceManager.debug.xcconfig"; sourceTree = "<group>"; };
-		D8A04983E64B7E4FF4C28DF57190FDA6 /* ViperitModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViperitModule.swift; path = Viperit/Core/ViperitModule.swift; sourceTree = "<group>"; };
+		D5BA6165E13E2D2F37A7237B2C1FD741 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F2F90AB4A0AB603FF0A2B501604A11 /* Pods-ForceManagerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ForceManagerTests-umbrella.h"; sourceTree = "<group>"; };
-		DCB733D7D255B02E4ABBA19710C242A8 /* Pods_ForceManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ForceManagerUITests.framework; path = "Pods-ForceManagerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1CB29771EEF057C9FC6F20822C1155 /* Viperit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Viperit-umbrella.h"; sourceTree = "<group>"; };
 		E03CD41BC80949D74E97D1210D0D35D3 /* Pods-ForceManagerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ForceManagerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E0BB3A9A0407D4E038A3278E46908794 /* Router.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Router.swift; path = Viperit/Core/Router.swift; sourceTree = "<group>"; };
 		E30C4C876ED921DB6532A5FD1C95AB66 /* Pods-ForceManagerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ForceManagerTests-frameworks.sh"; sourceTree = "<group>"; };
-		E3264CF7528D2878ABD5BD33A93AC45B /* Viperit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Viperit.modulemap; sourceTree = "<group>"; };
-		E40DD5D1C72D862082211D9E19BBAFBD /* String+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+.swift"; path = "Viperit/Extensions/String+.swift"; sourceTree = "<group>"; };
+		EA5457225E5D89736F80B5A1294F913F /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		F3550E1F309B9944DA39804D8A20A0E2 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		F40907678FDF4D36105AEBCE174291F7 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		F577D46F509E6DFDC9E5C65E549C1F29 /* Pods-ForceManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ForceManagerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		02C3F19A3E2BECC48E4A9A767A834E6D /* Frameworks */ = {
+		2969BE9F627183EC9C56DD78B244B70C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				835A27D23684304F87A5D70882EC8220 /* Foundation.framework in Frameworks */,
+				702C81B1DCA7E313AE5D2C7F4C054A4E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9800F2931B1A98A88F77CF5410F57861 /* Frameworks */ = {
+		8BC316E2277D8787A5807C4568DCA8BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCD0407C856BDFF5C9F3BB4F34E6843C /* Foundation.framework in Frameworks */,
+				EE86E11CB51425295DB1BFA91BABD404 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD550A573EED79EB94E74655AF65E9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				898865939E717481F95DACD4F6C93129 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,31 +159,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0ABED5144F3FCC8F4EF9AB9422D22835 /* Viperit */ = {
+		6361DEE6298AB9B38D3103D71C6636FB /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				9B28C5A8315D1D71D178857370DA0598 /* DisplayData.swift */,
-				C771FAA1A72E17C27C64CD70B1C31B9C /* Interactor.swift */,
-				B6DD4BE592D17014DC43E1E3E57B7C86 /* Module.swift */,
-				78E1E48ABC7DB25C319F349AD43DA64C /* Presenter.swift */,
-				E0BB3A9A0407D4E038A3278E46908794 /* Router.swift */,
-				E40DD5D1C72D862082211D9E19BBAFBD /* String+.swift */,
-				B32B210AFA5160A5F16567D07F8CBD39 /* UserInterface.swift */,
-				A07126943F1D8309757AE7F2954946FB /* ViperComponent.swift */,
-				3D3877FDC2BCC29A9304FA0E4CB64BAF /* ViperitError.swift */,
-				D8A04983E64B7E4FF4C28DF57190FDA6 /* ViperitModule.swift */,
-				D392B1588AF493DA3259EB4C57E928D4 /* Support Files */,
+				2D35FDF5B21157E2C29E88A3EF3B8E04 /* SwiftyJSON.swift */,
+				F3DED7FEC0C23CC076C1AD0333B4FDA2 /* Support Files */,
 			);
-			name = Viperit;
-			path = Viperit;
-			sourceTree = "<group>";
-		};
-		3B09DBCBA3892BD72499B50E6C8CF54D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0ABED5144F3FCC8F4EF9AB9422D22835 /* Viperit */,
-			);
-			name = Pods;
+			name = SwiftyJSON;
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 		707BDCAEC8D43BB450E7D77DCBCDB626 /* Pods-ForceManagerTests */ = {
@@ -177,13 +187,27 @@
 			path = "Target Support Files/Pods-ForceManagerTests";
 			sourceTree = "<group>";
 		};
+		76FF82067346779C567A40B4AF73861B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				593DADA364F9B48461DBDC0FCF7CF0BA /* Info.plist */,
+				4F36F025B9AC521C810593E8EF858EFE /* Viperit.modulemap */,
+				B79709B09670333EB5694326A68FDAD5 /* Viperit.xcconfig */,
+				97AAD603751C3B59F6488FCD1BBFE1C3 /* Viperit-dummy.m */,
+				419B8B384EFDE09815252C0B824CDD69 /* Viperit-prefix.pch */,
+				DA1CB29771EEF057C9FC6F20822C1155 /* Viperit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Viperit";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				3B09DBCBA3892BD72499B50E6C8CF54D /* Pods */,
-				CBC130CC1DB2FBD04995C24DEF22FC18 /* Products */,
+				F799BB9D5167537154AB50976461A38F /* Pods */,
+				B5AAE73DB53157F937C1EA99064D9282 /* Products */,
 				9899636EF8B822948C1AFCCC555509C1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -216,6 +240,37 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		B228C1413467C7F074155B481DF6F0EB /* Viperit */ = {
+			isa = PBXGroup;
+			children = (
+				2D4E58FD4858C216F1130355951F831B /* DisplayData.swift */,
+				B45CC12F2F1BCAACB465F0E2BF1FE249 /* Interactor.swift */,
+				3D31F4B5E9C96F25DA9844F1E352D9B1 /* Module.swift */,
+				1B1105A276332E5B383AD692A7EAB7A9 /* Presenter.swift */,
+				719EAA27D7175699926114948D31504C /* Router.swift */,
+				7A9F3306131F622163837F2137987E03 /* String+.swift */,
+				21DF6DE69E74060215B7AD4EF56C5396 /* UserInterface.swift */,
+				36EB9B514C735C0C9A03C613807D6D60 /* ViperComponent.swift */,
+				C4E6FDFE4288A5FEF94EA87E150B66BE /* ViperitError.swift */,
+				B05348F458D30AC489C7678664A5A8E4 /* ViperitModule.swift */,
+				76FF82067346779C567A40B4AF73861B /* Support Files */,
+			);
+			name = Viperit;
+			path = Viperit;
+			sourceTree = "<group>";
+		};
+		B5AAE73DB53157F937C1EA99064D9282 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A936358BA88127F27722746C49BF7953 /* Pods_ForceManager.framework */,
+				A4524BFB8E41639121BFD4C087910767 /* Pods_ForceManagerTests.framework */,
+				0152A43F5AEE4848C1483A0F05624A5B /* Pods_ForceManagerUITests.framework */,
+				D5BA6165E13E2D2F37A7237B2C1FD741 /* SwiftyJSON.framework */,
+				8645A0B9C92B327CA6786F81AEA971AF /* Viperit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,37 +279,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CBC130CC1DB2FBD04995C24DEF22FC18 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2A86660CAB7DE43EF318295CE0BF91D1 /* Pods_ForceManager.framework */,
-				79A1E7B79C6C24BE80A723BEC947E57B /* Pods_ForceManagerTests.framework */,
-				DCB733D7D255B02E4ABBA19710C242A8 /* Pods_ForceManagerUITests.framework */,
-				582873CF087F3BD3335262CBA296AEBD /* Viperit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		D392B1588AF493DA3259EB4C57E928D4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AD210162BCECE88093EB537FFD9954C1 /* Info.plist */,
-				E3264CF7528D2878ABD5BD33A93AC45B /* Viperit.modulemap */,
-				45205418640D881499CBEB3ED6528BEF /* Viperit.xcconfig */,
-				4A6218D4BCCBF81D48BB8BC35D5D30A1 /* Viperit-dummy.m */,
-				58B2BE4A698B610B1DE309057B81743C /* Viperit-prefix.pch */,
-				8DC129046403C97FB5257EEF523C91A0 /* Viperit-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Viperit";
 			sourceTree = "<group>";
 		};
 		DEDB3A7E7D0AC795A03CCDE64267510E /* Pods-ForceManager */ = {
@@ -275,6 +305,29 @@
 			path = "Target Support Files/Pods-ForceManager";
 			sourceTree = "<group>";
 		};
+		F3DED7FEC0C23CC076C1AD0333B4FDA2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0748064615FA666696D4F3B7116D8CB1 /* Info.plist */,
+				F40907678FDF4D36105AEBCE174291F7 /* SwiftyJSON.modulemap */,
+				EA5457225E5D89736F80B5A1294F913F /* SwiftyJSON.xcconfig */,
+				F3550E1F309B9944DA39804D8A20A0E2 /* SwiftyJSON-dummy.m */,
+				1DA3CED144452EFAE5CA4DBB81EB32FE /* SwiftyJSON-prefix.pch */,
+				71590BE1AC41BFDEC894D93274884F1B /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		F799BB9D5167537154AB50976461A38F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6361DEE6298AB9B38D3103D71C6636FB /* SwiftyJSON */,
+				B228C1413467C7F074155B481DF6F0EB /* Viperit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -286,19 +339,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		50C04E9AA70E54BE0504FCA5DC181137 /* Headers */ = {
+		204668E537D1CA67C3908D33757A8EA1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8341CF62A3B6A27AEB969EE2D3247812 /* Viperit-umbrella.h in Headers */,
+				978AC1EBF0AF3DDF3D3039994E525E15 /* Viperit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		738C6F923A5C4A7282B88D8A677540C2 /* Headers */ = {
+		59570A5091F5BED09F3B84531C8E1314 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87BAD4D0D8A7220317533845F6280569 /* Pods-ForceManager-umbrella.h in Headers */,
+				AA2E45BB3511F44789F398EEB24C2BED /* Pods-ForceManager-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3AD8D48EFB959E1F6CE862B2BE09B19 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00381F6B64FC35A2ACBDAC7CA8D5B91 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,13 +374,49 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		15992B261453F0FEDB32F981C5E05A7C /* Viperit */ = {
+		29823461EFE10BBC8357A0A2B875FE35 /* Pods-ForceManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 905CF4BB898C6CDCE64A1427714EB56C /* Build configuration list for PBXNativeTarget "Viperit" */;
+			buildConfigurationList = D72021F7579F50BB7A78B8D6B242CEC5 /* Build configuration list for PBXNativeTarget "Pods-ForceManager" */;
 			buildPhases = (
-				90D371841F4BD918506BCA09A983041D /* Sources */,
-				9800F2931B1A98A88F77CF5410F57861 /* Frameworks */,
-				50C04E9AA70E54BE0504FCA5DC181137 /* Headers */,
+				FE262269A7BF354F6B76881B9834DEF3 /* Sources */,
+				DCD550A573EED79EB94E74655AF65E9E /* Frameworks */,
+				59570A5091F5BED09F3B84531C8E1314 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A4951D5262B4A7997E3A35BDD9E1175 /* PBXTargetDependency */,
+				F0AD000A30D3CAE91862FAACE63532D2 /* PBXTargetDependency */,
+			);
+			name = "Pods-ForceManager";
+			productName = "Pods-ForceManager";
+			productReference = A936358BA88127F27722746C49BF7953 /* Pods_ForceManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5718D7F2CD2441403621F4B1CEB83D47 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4053D3A441EFE4C24AB469EE9D15E3EE /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				1DF1EC918F2077DF42BAA493A9016D66 /* Sources */,
+				2969BE9F627183EC9C56DD78B244B70C /* Frameworks */,
+				E3AD8D48EFB959E1F6CE862B2BE09B19 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = D5BA6165E13E2D2F37A7237B2C1FD741 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5CFB5C04874E005D37E3281443AE733D /* Viperit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CF4A87CC3A4D20AABB0CAF93F9FDE62 /* Build configuration list for PBXNativeTarget "Viperit" */;
+			buildPhases = (
+				14154B50B82D13E4640283E5C501327A /* Sources */,
+				8BC316E2277D8787A5807C4568DCA8BD /* Frameworks */,
+				204668E537D1CA67C3908D33757A8EA1 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -327,7 +424,7 @@
 			);
 			name = Viperit;
 			productName = Viperit;
-			productReference = 582873CF087F3BD3335262CBA296AEBD /* Viperit.framework */;
+			productReference = 8645A0B9C92B327CA6786F81AEA971AF /* Viperit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A03729730AA65ECE21C17F9BA603C87F /* Pods-ForceManagerTests */ = {
@@ -344,7 +441,7 @@
 			);
 			name = "Pods-ForceManagerTests";
 			productName = "Pods-ForceManagerTests";
-			productReference = 79A1E7B79C6C24BE80A723BEC947E57B /* Pods_ForceManagerTests.framework */;
+			productReference = A4524BFB8E41639121BFD4C087910767 /* Pods_ForceManagerTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A16688326FB3FB11DFDFA5A1B799ECE3 /* Pods-ForceManagerUITests */ = {
@@ -361,25 +458,7 @@
 			);
 			name = "Pods-ForceManagerUITests";
 			productName = "Pods-ForceManagerUITests";
-			productReference = DCB733D7D255B02E4ABBA19710C242A8 /* Pods_ForceManagerUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B7ED8BAF74FACC24CC276A5045B1AAE4 /* Pods-ForceManager */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8C51E60ACF334A306FA7E727427C66C9 /* Build configuration list for PBXNativeTarget "Pods-ForceManager" */;
-			buildPhases = (
-				26F6249A5EA5F7700EB4B16F92B53CE4 /* Sources */,
-				02C3F19A3E2BECC48E4A9A767A834E6D /* Frameworks */,
-				738C6F923A5C4A7282B88D8A677540C2 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				57A910AD1F5D56BA476942D311590299 /* PBXTargetDependency */,
-			);
-			name = "Pods-ForceManager";
-			productName = "Pods-ForceManager";
-			productReference = 2A86660CAB7DE43EF318295CE0BF91D1 /* Pods_ForceManager.framework */;
+			productReference = 0152A43F5AEE4848C1483A0F05624A5B /* Pods_ForceManagerUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -399,42 +478,44 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CBC130CC1DB2FBD04995C24DEF22FC18 /* Products */;
+			productRefGroup = B5AAE73DB53157F937C1EA99064D9282 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B7ED8BAF74FACC24CC276A5045B1AAE4 /* Pods-ForceManager */,
+				29823461EFE10BBC8357A0A2B875FE35 /* Pods-ForceManager */,
 				A03729730AA65ECE21C17F9BA603C87F /* Pods-ForceManagerTests */,
 				A16688326FB3FB11DFDFA5A1B799ECE3 /* Pods-ForceManagerUITests */,
-				15992B261453F0FEDB32F981C5E05A7C /* Viperit */,
+				5718D7F2CD2441403621F4B1CEB83D47 /* SwiftyJSON */,
+				5CFB5C04874E005D37E3281443AE733D /* Viperit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		26F6249A5EA5F7700EB4B16F92B53CE4 /* Sources */ = {
+		14154B50B82D13E4640283E5C501327A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C70843BFD15D754E4FD89FC504F9EDD9 /* Pods-ForceManager-dummy.m in Sources */,
+				DCC2F3A164B87B175EA054F3DFB509C2 /* DisplayData.swift in Sources */,
+				0E5E1CE965C1A5760E6A0D2F7E24B929 /* Interactor.swift in Sources */,
+				1F0C704C5CFAE52A707C432914D9BD67 /* Module.swift in Sources */,
+				3C83320C8835483BD008C5AC7163D178 /* Presenter.swift in Sources */,
+				4041E69C550BDD6EDCC8087098AC50C7 /* Router.swift in Sources */,
+				FBD3FE87576EBE4A39531E8FC9DEBA26 /* String+.swift in Sources */,
+				07DA55679667378E39CB5C2B9F5181D4 /* UserInterface.swift in Sources */,
+				42C338BB0275B0FEE2C67603AD3A2592 /* ViperComponent.swift in Sources */,
+				4931BE0C47B86C8F155CC5CD75432E20 /* Viperit-dummy.m in Sources */,
+				9DA5DDA08D80BE746F1E51D6ECA6DDA6 /* ViperitError.swift in Sources */,
+				B24A26DFA55E4E01E7EF4477219A5FBB /* ViperitModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		90D371841F4BD918506BCA09A983041D /* Sources */ = {
+		1DF1EC918F2077DF42BAA493A9016D66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8376CCAA7013E2E675CDE2149964603 /* DisplayData.swift in Sources */,
-				0EEDDDB931E6CCF2B26F162001DEF061 /* Interactor.swift in Sources */,
-				72BC92B0BAEAF0CA5BB69851806735C2 /* Module.swift in Sources */,
-				83CD2DFE601727E096546C37CAEB445F /* Presenter.swift in Sources */,
-				F8DCE5BD0C57E92807F206BF72C979D8 /* Router.swift in Sources */,
-				22CD6AA3855944B8F8D5CCF18B9865A9 /* String+.swift in Sources */,
-				D7475E16839A7E38B45CFC97B109EE99 /* UserInterface.swift in Sources */,
-				B1FCAC0E942BB25F6CFEDCBD4BC44293 /* ViperComponent.swift in Sources */,
-				EF5D372668FF5D09A37B00DDE693489B /* Viperit-dummy.m in Sources */,
-				121151395668F5920C68EFCDC7226FA6 /* ViperitError.swift in Sources */,
-				E82E3073BD0C5393A0123751940BA448 /* ViperitModule.swift in Sources */,
+				F393613453EA5BC0236FF5AD96115089 /* SwiftyJSON-dummy.m in Sources */,
+				F5B249F0D485CF86189D9B35D15640DD /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,21 +535,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FE262269A7BF354F6B76881B9834DEF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B2578D7CB6D4108050558FFD9A96B77 /* Pods-ForceManager-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		57A910AD1F5D56BA476942D311590299 /* PBXTargetDependency */ = {
+		1A4951D5262B4A7997E3A35BDD9E1175 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 5718D7F2CD2441403621F4B1CEB83D47 /* SwiftyJSON */;
+			targetProxy = 4F01100F75CBBD850CA0033CF975A93C /* PBXContainerItemProxy */;
+		};
+		F0AD000A30D3CAE91862FAACE63532D2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Viperit;
-			target = 15992B261453F0FEDB32F981C5E05A7C /* Viperit */;
-			targetProxy = 4622EAFF07F12F785993541CC05F045A /* PBXContainerItemProxy */;
+			target = 5CFB5C04874E005D37E3281443AE733D /* Viperit */;
+			targetProxy = CB38C4AE0343B8261A4F1F0364C87A18 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1D6E53A2D024EDAA90F4AFACBF8C208D /* Release */ = {
+		1C37A5B5184E981BD1A3535E537194A5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45205418640D881499CBEB3ED6528BEF /* Viperit.xcconfig */;
+			baseConfigurationReference = 4E9407FCAF11CB444369473A392B21A5 /* Pods-ForceManager.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -479,18 +574,20 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Viperit/Viperit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Viperit/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ForceManager/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Viperit/Viperit.modulemap";
-				PRODUCT_NAME = Viperit;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ForceManager/Pods-ForceManager.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ForceManager;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -558,6 +655,38 @@
 			};
 			name = Debug;
 		};
+		4B6BBC56FC23FD2B1DED1F77C8CFDDCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA5457225E5D89736F80B5A1294F913F /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		551E23D0766C176DC542B9CC67908867 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C3ECD42AAF266B94E27840674169641 /* Pods-ForceManagerUITests.release.xcconfig */;
@@ -624,9 +753,9 @@
 			};
 			name = Release;
 		};
-		6881C6C08A854B498C0FF9EC1A5A0AE5 /* Release */ = {
+		88ECCF2383BCC6BBD867EE878D1C0D47 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E9407FCAF11CB444369473A392B21A5 /* Pods-ForceManager.release.xcconfig */;
+			baseConfigurationReference = B79709B09670333EB5694326A68FDAD5 /* Viperit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -637,60 +766,24 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ForceManager/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Viperit/Viperit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Viperit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ForceManager/Pods-ForceManager.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ForceManager;
+				MODULEMAP_FILE = "Target Support Files/Viperit/Viperit.modulemap";
+				PRODUCT_NAME = Viperit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		83945B0E656551BFC3C08E41C481969B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF604D9BE492520A10315C6F4DDEFDCC /* Pods-ForceManager.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ForceManager/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ForceManager/Pods-ForceManager.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ForceManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -746,37 +839,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		94124BA65CCE7FC7A42719E5004115B4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45205418640D881499CBEB3ED6528BEF /* Viperit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Viperit/Viperit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Viperit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Viperit/Viperit.modulemap";
-				PRODUCT_NAME = Viperit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		A82D6439BFF8C8DAFCAB7A840E024141 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -842,6 +904,102 @@
 			};
 			name = Debug;
 		};
+		E3D752A62EF2676EA43F870AD879E276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF604D9BE492520A10315C6F4DDEFDCC /* Pods-ForceManager.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ForceManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ForceManager/Pods-ForceManager.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ForceManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E5FA0FBE522C8624015635F6DE3FA406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA5457225E5D89736F80B5A1294F913F /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F81BB747364D9BB905076302D47915BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B79709B09670333EB5694326A68FDAD5 /* Viperit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Viperit/Viperit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Viperit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Viperit/Viperit.modulemap";
+				PRODUCT_NAME = Viperit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -854,20 +1012,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8C51E60ACF334A306FA7E727427C66C9 /* Build configuration list for PBXNativeTarget "Pods-ForceManager" */ = {
+		3CF4A87CC3A4D20AABB0CAF93F9FDE62 /* Build configuration list for PBXNativeTarget "Viperit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				83945B0E656551BFC3C08E41C481969B /* Debug */,
-				6881C6C08A854B498C0FF9EC1A5A0AE5 /* Release */,
+				F81BB747364D9BB905076302D47915BB /* Debug */,
+				88ECCF2383BCC6BBD867EE878D1C0D47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		905CF4BB898C6CDCE64A1427714EB56C /* Build configuration list for PBXNativeTarget "Viperit" */ = {
+		4053D3A441EFE4C24AB469EE9D15E3EE /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				94124BA65CCE7FC7A42719E5004115B4 /* Debug */,
-				1D6E53A2D024EDAA90F4AFACBF8C208D /* Release */,
+				E5FA0FBE522C8624015635F6DE3FA406 /* Debug */,
+				4B6BBC56FC23FD2B1DED1F77C8CFDDCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -877,6 +1035,15 @@
 			buildConfigurations = (
 				BDA02E5748D2635B116D79BB9751F620 /* Debug */,
 				5803086DA544FFDC9800AB64AE43D161 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D72021F7579F50BB7A78B8D6B242CEC5 /* Build configuration list for PBXNativeTarget "Pods-ForceManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3D752A62EF2676EA43F870AD879E276 /* Debug */,
+				1C37A5B5184E981BD1A3535E537194A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

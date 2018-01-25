@@ -10,7 +10,6 @@
 		00457B8E508FEAE18B9F78D2 /* Pods_ForceManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4840E1366C3F5B4DE4F1FC7 /* Pods_ForceManagerTests.framework */; };
 		09940E3E96DBA8FDC5A35701 /* Pods_ForceManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCAC67AFCD3588373FBF1C4 /* Pods_ForceManager.framework */; };
 		1F79AD44201A5918003FA1E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79AD43201A5918003FA1E3 /* AppDelegate.swift */; };
-		1F79AD46201A5918003FA1E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79AD45201A5918003FA1E3 /* ViewController.swift */; };
 		1F79AD49201A5918003FA1E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F79AD47201A5918003FA1E3 /* Main.storyboard */; };
 		1F79AD4B201A5918003FA1E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F79AD4A201A5918003FA1E3 /* Assets.xcassets */; };
 		1F79AD4E201A5918003FA1E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F79AD4C201A5918003FA1E3 /* LaunchScreen.storyboard */; };
@@ -25,6 +24,7 @@
 		1F79AD80201A5AC3003FA1E3 /* AppModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79AD7F201A5AC3003FA1E3 /* AppModules.swift */; };
 		1F79AD84201A5D73003FA1E3 /* MonumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79AD82201A5D73003FA1E3 /* MonumentTableViewCell.swift */; };
 		1F79AD85201A5D73003FA1E3 /* MonumentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F79AD83201A5D73003FA1E3 /* MonumentTableViewCell.xib */; };
+		1F79AD89201A6479003FA1E3 /* Monument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79AD88201A6479003FA1E3 /* Monument.swift */; };
 		2E412D762E3CD76CA06E7EB9 /* Pods_ForceManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32415E01678DEA5BDDB1C13 /* Pods_ForceManagerUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +49,6 @@
 		03C905D59ADEE9288FE0AEA8 /* Pods-ForceManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForceManagerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForceManagerUITests/Pods-ForceManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1F79AD40201A5918003FA1E3 /* ForceManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForceManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F79AD43201A5918003FA1E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F79AD45201A5918003FA1E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F79AD48201A5918003FA1E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F79AD4A201A5918003FA1E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F79AD4D201A5918003FA1E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +68,7 @@
 		1F79AD7F201A5AC3003FA1E3 /* AppModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModules.swift; sourceTree = "<group>"; };
 		1F79AD82201A5D73003FA1E3 /* MonumentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentTableViewCell.swift; sourceTree = "<group>"; };
 		1F79AD83201A5D73003FA1E3 /* MonumentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonumentTableViewCell.xib; sourceTree = "<group>"; };
+		1F79AD88201A6479003FA1E3 /* Monument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monument.swift; sourceTree = "<group>"; };
 		34EF83F1BCE5DE8456BC9CD5 /* Pods-ForceManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForceManagerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForceManagerUITests/Pods-ForceManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3EF2F0CDD1A45B1381676F31 /* Pods-ForceManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForceManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForceManagerTests/Pods-ForceManagerTests.release.xcconfig"; sourceTree = "<group>"; };
 		4D6E900FCE4F7E12E2D7983C /* Pods-ForceManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForceManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForceManager/Pods-ForceManager.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 			children = (
 				1F79AD43201A5918003FA1E3 /* AppDelegate.swift */,
 				1F79AD71201A5A0B003FA1E3 /* Modules */,
-				1F79AD45201A5918003FA1E3 /* ViewController.swift */,
+				1F79AD86201A6459003FA1E3 /* Network */,
 				1F79AD47201A5918003FA1E3 /* Main.storyboard */,
 				1F79AD4A201A5918003FA1E3 /* Assets.xcassets */,
 				1F79AD4C201A5918003FA1E3 /* LaunchScreen.storyboard */,
@@ -191,6 +191,22 @@
 				1F79AD83201A5D73003FA1E3 /* MonumentTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		1F79AD86201A6459003FA1E3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1F79AD87201A646D003FA1E3 /* Models */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1F79AD87201A646D003FA1E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F79AD88201A6479003FA1E3 /* Monument.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		9D86E1C7CB28E71EAB884FA9 /* Frameworks */ = {
@@ -379,10 +395,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ForceManager/Pods-ForceManager-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Viperit/Viperit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Viperit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,9 +530,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F79AD84201A5D73003FA1E3 /* MonumentTableViewCell.swift in Sources */,
-				1F79AD46201A5918003FA1E3 /* ViewController.swift in Sources */,
 				1F79AD7C201A5A8E003FA1E3 /* MonumentsInteractor.swift in Sources */,
 				1F79AD7A201A5A8E003FA1E3 /* MonumentsPresenter.swift in Sources */,
+				1F79AD89201A6479003FA1E3 /* Monument.swift in Sources */,
 				1F79AD44201A5918003FA1E3 /* AppDelegate.swift in Sources */,
 				1F79AD7B201A5A8E003FA1E3 /* MonumentsRouter.swift in Sources */,
 				1F79AD80201A5AC3003FA1E3 /* AppModules.swift in Sources */,
