@@ -4,8 +4,7 @@
 target 'ForceManager' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
-  # Pods for ForceManager
+  pod 'Viperit'
 
   target 'ForceManagerTests' do
     inherit! :search_paths
