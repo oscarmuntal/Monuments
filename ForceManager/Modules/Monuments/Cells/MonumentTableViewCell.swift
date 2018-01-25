@@ -10,15 +10,24 @@ import UIKit
 
 class MonumentTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var creationDateLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var distanceLabel: UILabel!
+    
+    func configure(monument: Monument) {
+        nameLabel.text = monument.name
+        creationDateLabel.text = getCreationDate(monument.creation)
+        descriptionLabel.text = monument.description
+        distanceLabel.text = String(describing: monument.distance)
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    private func getCreationDate(_ date: Date?) -> String {
+        let dateformatter = DateFormatter()
+        dateformatter.dateStyle = DateFormatter.Style.short
+        dateformatter.timeStyle = DateFormatter.Style.short
+        guard let date = date else { return "" }
+        return dateformatter.string(from: date)
     }
     
 }

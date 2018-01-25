@@ -8,6 +8,7 @@
 
 import UIKit
 import Viperit
+import CoreLocation
 
 //MARK: - Public Interface Protocol
 protocol MonumentsViewInterface {
@@ -17,10 +18,11 @@ protocol MonumentsViewInterface {
 final class MonumentsView: UserInterface {
     
     @IBOutlet weak var tableView: UITableView!
+    var locationManager: CLLocationManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUI()
+        initLocationManager()
     }
 }
 
@@ -30,30 +32,53 @@ extension MonumentsView {
         title  = displayData.screenName
         registerCells()
         removeExtraRows()
+        tableView.reloadData()
     }
     
     private func registerCells() {
-        tableView.register(UINib(nibName: "MonumentTableViewCell", bundle: nil), forCellReuseIdentifier: "MonumentTableViewCell")
+        tableView.register(UINib(nibName: displayData.monumentTableViewCell, bundle: nil), forCellReuseIdentifier: displayData.monumentTableViewCell)
     }
     
     private func removeExtraRows() {
         tableView.tableFooterView = UIView()
     }
     
+    private func initLocationManager() {
+        if (CLLocationManager.locationServicesEnabled()) {
+            locationManager = CLLocationManager()
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.requestAlwaysAuthorization()
+            locationManager.startUpdatingLocation()
+        }
+    }
+    
+}
+
+func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
 }
 
 extension MonumentsView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return presenter.monuments.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: displayData.monumentTableViewCell, for: indexPath as IndexPath) as! MonumentTableViewCell
-        
+        cell.configure(monument: presenter.monuments[indexPath.row])
         return cell
     }
     
+}
+
+extension MonumentsView: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location = locations.last! as CLLocation
+        presenter.generateMonumentsWithCurrentLocation(location)   //temporary method for fake initial test
+        setUI()
+    }
 }
 
 

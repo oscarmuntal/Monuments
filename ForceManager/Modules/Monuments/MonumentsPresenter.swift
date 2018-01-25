@@ -8,8 +8,20 @@
 
 import Foundation
 import Viperit
+import CoreLocation
 
 class MonumentsPresenter: Presenter {
+    
+    var monuments: [Monument] = []
+    
+    //temporary method for fake initial test
+    func generateMonumentsWithCurrentLocation(_ currentLocation: CLLocation) {
+        monuments = interactor.generateMonuments(currentLocation)
+    }
+    
+    func getMonuments() -> [Monument] {
+        return monuments
+    }
 }
 
 

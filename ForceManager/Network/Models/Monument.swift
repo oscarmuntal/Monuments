@@ -8,20 +8,31 @@
 
 import Foundation
 import SwiftyJSON
+import CoreLocation
 
 class Monument {
     
     var name = ""
     var creation: Date?
     var description = ""
-    var position: CLLocationCoordinate2D?
-    var distance: Int?
+    var position: CLLocation?
+    var distance = ""
     
-    init(data: JSON) {
-        self.name = data["name"].stringValue
+    init(name: String, description: String, position: CLLocation, userLocation: CLLocation) {
+        self.name = name
         self.creation = Date()
-        self.description = data["description"].stringValue
-        //TODO: Set position and distance values
+        self.description = description
+        self.position = position
+        self.distance = getDistanceFromUser(position: position, userLocation: userLocation)
+    }
+    
+    private func getDistanceFromUser(position: CLLocation, userLocation: CLLocation) -> String {
+        let distanceInMeters = position.distance(from: userLocation)
+        return "\(distanceWithTwoDecimals(distanceInMeters)) meters"
+    }
+    
+    private func distanceWithTwoDecimals(_ distanceInMeters: CLLocationDistance) -> CLLocationDistance {
+        return Double(round(100*distanceInMeters)/100)
     }
         
 }
