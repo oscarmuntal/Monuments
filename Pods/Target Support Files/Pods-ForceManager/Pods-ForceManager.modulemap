@@ -1,0 +1,6 @@
+framework module Pods_ForceManager {
+  umbrella header "Pods-ForceManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

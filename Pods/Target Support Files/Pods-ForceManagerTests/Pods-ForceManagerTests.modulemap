@@ -1,0 +1,6 @@
+framework module Pods_ForceManagerTests {
+  umbrella header "Pods-ForceManagerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
