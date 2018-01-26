@@ -15,6 +15,11 @@ protocol EditMonumentViewInterface {
 
 //MARK: EditMonumentView Class
 final class EditMonumentView: UserInterface {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = presenter.monument?.name
+    }
 }
 
 //MARK: - Public interface

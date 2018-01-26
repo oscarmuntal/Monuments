@@ -22,6 +22,10 @@ class MonumentsPresenter: Presenter {
     func getMonuments() -> [Monument] {
         return monuments
     }
+    
+    func onMonumentTapped(_ monument: Monument) {
+        router.goToEditMonument(monument)
+    }
 }
 
 

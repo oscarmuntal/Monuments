@@ -10,6 +10,13 @@ import Foundation
 import Viperit
 
 class MonumentsRouter: Router {
+
+    func goToEditMonument(_ monument: Monument) {
+        guard   let detailRouter = AppModules.EditMonument.build().router as? EditMonumentRouter,
+            let vc = self.presenter._view else { return }
+        
+        detailRouter.showEditMonument(monument: monument, fromVC: vc)
+    }
 }
 
 // MARK: - VIPER COMPONENTS API (Auto-generated code)

@@ -10,6 +10,8 @@ import Foundation
 import Viperit
 
 class EditMonumentPresenter: Presenter {
+    
+    var monument: Monument?
 }
 
 

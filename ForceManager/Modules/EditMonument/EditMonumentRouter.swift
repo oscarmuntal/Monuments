@@ -10,6 +10,12 @@ import Foundation
 import Viperit
 
 class EditMonumentRouter: Router {
+    
+    func showEditMonument(monument: Monument, fromVC: UIViewController) {
+        presenter.monument = monument
+        guard let vc = self.presenter._view else { return }
+        fromVC.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 // MARK: - VIPER COMPONENTS API (Auto-generated code)
