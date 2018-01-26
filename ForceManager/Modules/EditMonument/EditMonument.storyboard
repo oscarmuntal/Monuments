@@ -177,17 +177,51 @@
                                     <constraint firstAttribute="trailing" secondItem="Q3O-1e-sfp" secondAttribute="trailing" id="zr6-9c-UPw"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6tq-uA-93B" userLabel="Type View">
+                                <rect key="frame" x="16" y="391" width="343" height="56"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHq-sF-PqM" userLabel="Type Label">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="5Vb-i3-Nm8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eS-Yb-EiA" userLabel="Type Button">
+                                        <rect key="frame" x="0.0" y="26" width="343" height="30"/>
+                                        <state key="normal" title="Choose a type"/>
+                                        <connections>
+                                            <action selector="typeButtonAction:" destination="xqD-av-Raz" eventType="touchUpInside" id="IAY-W2-YW7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="1eS-Yb-EiA" firstAttribute="top" secondItem="rHq-sF-PqM" secondAttribute="bottom" constant="5" id="0Nd-0n-E40"/>
+                                    <constraint firstItem="rHq-sF-PqM" firstAttribute="leading" secondItem="6tq-uA-93B" secondAttribute="leading" id="0ox-5K-jyt"/>
+                                    <constraint firstItem="1eS-Yb-EiA" firstAttribute="leading" secondItem="6tq-uA-93B" secondAttribute="leading" id="4pO-MY-A66"/>
+                                    <constraint firstAttribute="trailing" secondItem="1eS-Yb-EiA" secondAttribute="trailing" id="6qW-1V-pBB"/>
+                                    <constraint firstAttribute="bottom" secondItem="1eS-Yb-EiA" secondAttribute="bottom" id="AMg-5P-F4b"/>
+                                    <constraint firstItem="rHq-sF-PqM" firstAttribute="top" secondItem="6tq-uA-93B" secondAttribute="top" id="Ec2-HV-Mli"/>
+                                    <constraint firstAttribute="trailing" secondItem="rHq-sF-PqM" secondAttribute="trailing" id="pLv-wj-fWW"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="IWq-ye-0FM" secondAttribute="trailing" constant="16" id="4lE-Vu-nra"/>
                             <constraint firstItem="0Ap-Ke-OGn" firstAttribute="top" secondItem="ROF-2b-9z4" secondAttribute="bottom" constant="20" id="C4y-0z-xTr"/>
                             <constraint firstItem="ROF-2b-9z4" firstAttribute="top" secondItem="EcR-ye-kTk" secondAttribute="bottom" id="E8Z-59-CA3"/>
+                            <constraint firstAttribute="trailing" secondItem="6tq-uA-93B" secondAttribute="trailing" constant="16" id="Gom-Bc-aFb"/>
+                            <constraint firstItem="6tq-uA-93B" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" constant="16" id="J0m-qh-Ltu"/>
                             <constraint firstAttribute="trailing" secondItem="YjV-7U-aii" secondAttribute="trailing" constant="16" id="cdi-Yc-1sV"/>
                             <constraint firstAttribute="trailing" secondItem="ROF-2b-9z4" secondAttribute="trailing" constant="16" id="ciE-BD-4Gi"/>
                             <constraint firstItem="0Ap-Ke-OGn" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" constant="16" id="i5Q-a5-X94"/>
                             <constraint firstItem="ROF-2b-9z4" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" constant="16" id="ijQ-8q-skP"/>
                             <constraint firstAttribute="trailing" secondItem="0Ap-Ke-OGn" secondAttribute="trailing" constant="16" id="iw9-Y1-y27"/>
+                            <constraint firstItem="6tq-uA-93B" firstAttribute="top" secondItem="IWq-ye-0FM" secondAttribute="bottom" constant="20" id="oE2-GA-ZvT"/>
                             <constraint firstItem="IWq-ye-0FM" firstAttribute="top" secondItem="YjV-7U-aii" secondAttribute="bottom" constant="20" id="oEG-LI-HQ9"/>
                             <constraint firstItem="YjV-7U-aii" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" constant="16" id="spN-AW-2Yc"/>
                             <constraint firstItem="IWq-ye-0FM" firstAttribute="leading" secondItem="kgt-o0-aP8" secondAttribute="leading" constant="16" id="tT3-1q-mQS"/>
@@ -200,6 +234,7 @@
                         <outlet property="latitudeTextField" destination="JAb-KO-fyF" id="k5b-lJ-V48"/>
                         <outlet property="longitudeTextField" destination="ccI-do-kxg" id="wrn-LO-QlY"/>
                         <outlet property="nameTextField" destination="EyB-F9-OKM" id="js1-62-DG2"/>
+                        <outlet property="typeButton" destination="1eS-Yb-EiA" id="ti2-3f-jXP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nXm-AG-NXG" userLabel="First Responder" sceneMemberID="firstResponder"/>

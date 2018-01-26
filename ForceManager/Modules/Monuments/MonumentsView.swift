@@ -23,6 +23,7 @@ final class MonumentsView: UserInterface {
     override func viewDidLoad() {
         super.viewDidLoad()
         initLocationManager()
+        presenter.getTypeValues()
     }
 }
 

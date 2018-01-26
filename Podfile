@@ -6,6 +6,7 @@ target 'ForceManager' do
   use_frameworks!
   pod 'Viperit'
   pod 'SwiftyJSON'
+  pod 'Alamofire', '~> 4.3'
 
   target 'ForceManagerTests' do
     inherit! :search_paths

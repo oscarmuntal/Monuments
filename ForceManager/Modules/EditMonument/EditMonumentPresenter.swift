@@ -9,12 +9,14 @@
 import Foundation
 import Viperit
 import CoreLocation
+import SwiftyJSON
 
 class EditMonumentPresenter: Presenter {
     
     var monument: Monument?
     var rowEdited: Int?
     var onSuccess: ObjectClosure<EditMonumentView>?
+    var types: [String] = []
     
     func setLatitude(_ latitude: String) {
         if let longitude = monument?.position?.coordinate.longitude {
@@ -27,6 +29,7 @@ class EditMonumentPresenter: Presenter {
             monument?.position = CLLocation(latitude: latitude, longitude: (longitude as NSString).doubleValue)
         }
     }
+    
 }
 
 

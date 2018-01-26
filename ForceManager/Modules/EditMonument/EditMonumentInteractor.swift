@@ -10,6 +10,7 @@ import Foundation
 import Viperit
 
 class EditMonumentInteractor: Interactor {
+    
 }
 
 // MARK: - VIPER COMPONENTS API (Auto-generated code)

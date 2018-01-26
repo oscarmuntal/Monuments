@@ -10,12 +10,380 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ForceManager/Modules/EditMonument/EditMonumentView.swift"
-            timestampString = "538628851.312029"
+            timestampString = "538632103.058015"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "textFieldDidEndEditing(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ForceManager/Modules/Monuments/MonumentsPresenter.swift"
+            timestampString = "538632103.058102"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "getTypeValues()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ForceManager.MonumentsPresenter.getTypeValues() -&gt; ()"
+                  moduleName = "ForceManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/OscarMuntal/Development/Empreses/_PROVES%20TE%CC%80CNIQUES/ForceManager/ForceManager/ForceManager/Modules/Monuments/MonumentsPresenter.swift"
+                  timestampString = "538632103.143919"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "14">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;SwiftyJSON.JSON&gt;) -&gt; () in ForceManager.MonumentsPresenter.getTypeValues() -&gt; ()"
+                  moduleName = "ForceManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/OscarMuntal/Development/Empreses/_PROVES%20TE%CC%80CNIQUES/ForceManager/ForceManager/ForceManager/Modules/Monuments/MonumentsPresenter.swift"
+                  timestampString = "538632103.146813"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "115">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ForceManager/Modules/Monuments/MonumentsPresenter.swift"
+            timestampString = "538632103.05847"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "getTypeValues()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ForceManager/Modules/Monuments/MonumentsPresenter.swift"
+            timestampString = "538632103.058719"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "getTypeValues()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ForceManager/Modules/Monuments/MonumentsPresenter.swift"
+            timestampString = "538632103.058942"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "getTypeValues()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ForceManager/Modules/Monuments/MonumentsPresenter.swift"
+            timestampString = "538632103.059299"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "getTypeValues()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ForceManager/Modules/Monuments/MonumentsPresenter.swift"
+            timestampString = "538632103.059557"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "getTypeValues()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ForceManager.MonumentsPresenter.getTypeValues() -&gt; ()"
+                  moduleName = "ForceManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/OscarMuntal/Development/Empreses/_PROVES%20TE%CC%80CNIQUES/ForceManager/ForceManager/ForceManager/Modules/Monuments/MonumentsPresenter.swift"
+                  timestampString = "538632103.20749"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "50">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;ForceManager.APIError&gt;) -&gt; () in ForceManager.MonumentsPresenter.getTypeValues() -&gt; ()"
+                  moduleName = "ForceManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/OscarMuntal/Development/Empreses/_PROVES%20TE%CC%80CNIQUES/ForceManager/ForceManager/ForceManager/Modules/Monuments/MonumentsPresenter.swift"
+                  timestampString = "538632103.210258"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ForceManager/Modules/Monuments/MonumentsInteractor.swift"
+            timestampString = "538632103.059877"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "updateTypeValue(successBlock:errorBlock:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ForceManager.MonumentsInteractor.updateTypeValue(successBlock: (Swift.Optional&lt;SwiftyJSON.JSON&gt;) -&gt; (), errorBlock: (Swift.Optional&lt;ForceManager.APIError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ForceManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/OscarMuntal/Development/Empreses/_PROVES%20TE%CC%80CNIQUES/ForceManager/ForceManager/ForceManager/Modules/Monuments/MonumentsInteractor.swift"
+                  timestampString = "538632103.216287"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "460">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;SwiftyJSON.JSON&gt;) -&gt; () in ForceManager.MonumentsInteractor.updateTypeValue(successBlock: (Swift.Optional&lt;SwiftyJSON.JSON&gt;) -&gt; (), errorBlock: (Swift.Optional&lt;ForceManager.APIError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ForceManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/OscarMuntal/Development/Empreses/_PROVES%20TE%CC%80CNIQUES/ForceManager/ForceManager/ForceManager/Modules/Monuments/MonumentsInteractor.swift"
+                  timestampString = "538632103.218642"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "144">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ForceManager/Modules/Monuments/MonumentsInteractor.swift"
+            timestampString = "538632103.0600049"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "updateTypeValue(successBlock:errorBlock:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ForceManager/Modules/Monuments/MonumentsInteractor.swift"
+            timestampString = "538632103.06011"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "updateTypeValue(successBlock:errorBlock:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ForceManager/Modules/Monuments/MonumentsInteractor.swift"
+            timestampString = "538632103.060204"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "updateTypeValue(successBlock:errorBlock:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ForceManager/Network/ApiManager.swift"
+            timestampString = "538632103.0603141"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "get(path:successBlock:errorBlock:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ForceManager.ApiManager.get(path: Swift.String, successBlock: (Swift.Optional&lt;SwiftyJSON.JSON&gt;) -&gt; (), errorBlock: (Swift.Optional&lt;ForceManager.APIError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ForceManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/OscarMuntal/Development/Empreses/_PROVES%20TE%CC%80CNIQUES/ForceManager/ForceManager/ForceManager/Network/ApiManager.swift"
+                  timestampString = "538632103.2420501"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "49">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in ForceManager.ApiManager.get(path: Swift.String, successBlock: (Swift.Optional&lt;SwiftyJSON.JSON&gt;) -&gt; (), errorBlock: (Swift.Optional&lt;ForceManager.APIError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ForceManager"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/OscarMuntal/Development/Empreses/_PROVES%20TE%CC%80CNIQUES/ForceManager/ForceManager/ForceManager/Network/ApiManager.swift"
+                  timestampString = "538632103.244929"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ForceManager/Network/ApiManager.swift"
+            timestampString = "538632103.061379"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "get(path:successBlock:errorBlock:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ForceManager/Network/ApiManager.swift"
+            timestampString = "538632103.0620559"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "get(path:successBlock:errorBlock:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ForceManager/Network/ApiManager.swift"
+            timestampString = "538632103.062553"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "get(path:successBlock:errorBlock:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ForceManager/Network/ApiManager.swift"
+            timestampString = "538632103.063876"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "get(path:successBlock:errorBlock:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

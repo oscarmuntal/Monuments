@@ -33,6 +33,8 @@
 		1FBFA5CB201AB378009AB396 /* EditMonumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBFA5C5201AB378009AB396 /* EditMonumentView.swift */; };
 		1FBFA5CF201AC26C009AB396 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBFA5CE201AC26C009AB396 /* Date+Extension.swift */; };
 		1FBFA5D2201ACF0F009AB396 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBFA5D1201ACF0F009AB396 /* Typealiases.swift */; };
+		1FBFA5D4201AD60A009AB396 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBFA5D3201AD60A009AB396 /* APIError.swift */; };
+		1FBFA5D6201AD69E009AB396 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBFA5D5201AD69E009AB396 /* ApiManager.swift */; };
 		2E412D762E3CD76CA06E7EB9 /* Pods_ForceManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32415E01678DEA5BDDB1C13 /* Pods_ForceManagerUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,8 @@
 		1FBFA5C5201AB378009AB396 /* EditMonumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMonumentView.swift; sourceTree = "<group>"; };
 		1FBFA5CE201AC26C009AB396 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		1FBFA5D1201ACF0F009AB396 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		1FBFA5D3201AD60A009AB396 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		1FBFA5D5201AD69E009AB396 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		34EF83F1BCE5DE8456BC9CD5 /* Pods-ForceManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForceManagerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForceManagerUITests/Pods-ForceManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3EF2F0CDD1A45B1381676F31 /* Pods-ForceManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForceManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForceManagerTests/Pods-ForceManagerTests.release.xcconfig"; sourceTree = "<group>"; };
 		4D6E900FCE4F7E12E2D7983C /* Pods-ForceManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForceManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForceManager/Pods-ForceManager.release.xcconfig"; sourceTree = "<group>"; };
@@ -215,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				1F79AD87201A646D003FA1E3 /* Models */,
+				1FBFA5D5201AD69E009AB396 /* ApiManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -223,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				1F79AD88201A6479003FA1E3 /* Monument.swift */,
+				1FBFA5D3201AD60A009AB396 /* APIError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -452,11 +458,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ForceManager/Pods-ForceManager-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Viperit/Viperit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Viperit.framework",
 			);
@@ -589,12 +597,14 @@
 				1FBFA5D2201ACF0F009AB396 /* Typealiases.swift in Sources */,
 				1FBFA5CA201AB378009AB396 /* EditMonumentInteractor.swift in Sources */,
 				1F79AD84201A5D73003FA1E3 /* MonumentTableViewCell.swift in Sources */,
+				1FBFA5D4201AD60A009AB396 /* APIError.swift in Sources */,
 				1FBFA5C9201AB378009AB396 /* EditMonumentRouter.swift in Sources */,
 				1F79AD7C201A5A8E003FA1E3 /* MonumentsInteractor.swift in Sources */,
 				1F79AD7A201A5A8E003FA1E3 /* MonumentsPresenter.swift in Sources */,
 				1FBFA5CF201AC26C009AB396 /* Date+Extension.swift in Sources */,
 				1FBFA5CB201AB378009AB396 /* EditMonumentView.swift in Sources */,
 				1F79AD89201A6479003FA1E3 /* Monument.swift in Sources */,
+				1FBFA5D6201AD69E009AB396 /* ApiManager.swift in Sources */,
 				1F79AD44201A5918003FA1E3 /* AppDelegate.swift in Sources */,
 				1F79AD7B201A5A8E003FA1E3 /* MonumentsRouter.swift in Sources */,
 				1F79AD80201A5AC3003FA1E3 /* AppModules.swift in Sources */,

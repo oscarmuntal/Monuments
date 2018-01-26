@@ -22,6 +22,11 @@ final class EditMonumentView: UserInterface {
     @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var latitudeTextField: UITextField!
     @IBOutlet weak var longitudeTextField: UITextField!
+    @IBOutlet weak var typeButton: UIButton!
+    
+    @IBAction func typeButtonAction(_ sender: Any) {
+        typeButtonTapped()
+    }
     
     var delegate: EditMonumentViewInterface?
     
@@ -73,6 +78,26 @@ extension EditMonumentView: UITextFieldDelegate {
 }
 
 extension EditMonumentView {
+    
+    fileprivate func typeButtonTapped() {
+        /*presenter.updateTypeValue(updateUI: { [typeValue] in
+            self.typeButton.titleLabel?.text = typeValue
+        }) { error in
+            //TODO: use error from API
+        }*/
+        
+        //Mostrar alert
+        let alert = UIAlertController(title: displayData.typesTitle, message: displayData.typesText, preferredStyle: .actionSheet)
+        
+        for type in presenter.types {
+            alert.addAction(UIAlertAction(title: type, style: .default, handler: { action in
+                self.typeButton.titleLabel?.text = type
+            }))
+        }
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
     
     fileprivate func setTextFieldDelegates() {
         nameTextField.delegate = self

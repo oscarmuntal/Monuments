@@ -11,10 +11,11 @@ import Viperit
 
 class EditMonumentRouter: Router {
     
-    func showEditMonument(monument: Monument, rowEdited: Int, fromVC: UIViewController, onSuccess: @escaping ObjectClosure<EditMonumentView>) {
+    func showEditMonument(monument: Monument, rowEdited: Int, fromVC: UIViewController, types: [String], onSuccess: @escaping ObjectClosure<EditMonumentView>) {
         presenter.monument = monument
         presenter.rowEdited = rowEdited
         presenter.onSuccess = onSuccess
+        presenter.types = types
         guard let vc = self.presenter._view else { return }
         fromVC.navigationController?.pushViewController(vc, animated: true)
     }

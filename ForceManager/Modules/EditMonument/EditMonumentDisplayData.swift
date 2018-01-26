@@ -17,4 +17,6 @@ class EditMonumentDisplayData: DisplayData {
     let latitudeTag = 2
     let longitudeTag = 3
     
+    let typesTitle = "Types List"
+    let typesText = "Choose a type"
 }

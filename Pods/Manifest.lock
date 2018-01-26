@@ -1,15 +1,18 @@
 PODS:
+  - Alamofire (4.6.0)
   - SwiftyJSON (4.0.0)
   - Viperit (1.0.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.3)
   - SwiftyJSON
   - Viperit
 
 SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   Viperit: 9b4b2614a2e3806cb2a86b99715f7b71b6486d65
 
-PODFILE CHECKSUM: ca1145406bf003cd07bdd25ae08e7dca4d3b7211
+PODFILE CHECKSUM: 55757e58ed8bdd66a7a3104ac18eff521668f82f
 
 COCOAPODS: 1.4.0

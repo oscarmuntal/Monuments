@@ -7,5 +7,8 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 typealias ObjectClosure<T> = (_: T) -> (Void)
+typealias RequestSuccessBlock = (_ response: JSON?) -> Void
+typealias RequestErrorBlock = (_ error: APIError?) -> Void
