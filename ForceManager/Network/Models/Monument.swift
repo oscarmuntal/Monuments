@@ -17,13 +17,15 @@ class Monument {
     var description = ""
     var position: CLLocation?
     var distance = ""
+    var type = ""
     
-    init(name: String, description: String, position: CLLocation, userLocation: CLLocation) {
+    init(name: String, description: String, position: CLLocation, userLocation: CLLocation, type: String) {
         self.name = name
         self.creation = Date()
         self.description = description
         self.position = position
         self.distance = getDistanceFromUser(position: position, userLocation: userLocation)
+        self.type = type
     }
     
     private func getDistanceFromUser(position: CLLocation, userLocation: CLLocation) -> String {
