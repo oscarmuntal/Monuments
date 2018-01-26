@@ -25,6 +25,12 @@
 		1F79AD84201A5D73003FA1E3 /* MonumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79AD82201A5D73003FA1E3 /* MonumentTableViewCell.swift */; };
 		1F79AD85201A5D73003FA1E3 /* MonumentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F79AD83201A5D73003FA1E3 /* MonumentTableViewCell.xib */; };
 		1F79AD89201A6479003FA1E3 /* Monument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79AD88201A6479003FA1E3 /* Monument.swift */; };
+		1FBFA5C6201AB378009AB396 /* EditMonument.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FBFA5C0201AB378009AB396 /* EditMonument.storyboard */; };
+		1FBFA5C7201AB378009AB396 /* EditMonumentDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBFA5C1201AB378009AB396 /* EditMonumentDisplayData.swift */; };
+		1FBFA5C8201AB378009AB396 /* EditMonumentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBFA5C2201AB378009AB396 /* EditMonumentPresenter.swift */; };
+		1FBFA5C9201AB378009AB396 /* EditMonumentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBFA5C3201AB378009AB396 /* EditMonumentRouter.swift */; };
+		1FBFA5CA201AB378009AB396 /* EditMonumentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBFA5C4201AB378009AB396 /* EditMonumentInteractor.swift */; };
+		1FBFA5CB201AB378009AB396 /* EditMonumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBFA5C5201AB378009AB396 /* EditMonumentView.swift */; };
 		2E412D762E3CD76CA06E7EB9 /* Pods_ForceManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32415E01678DEA5BDDB1C13 /* Pods_ForceManagerUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +75,12 @@
 		1F79AD82201A5D73003FA1E3 /* MonumentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentTableViewCell.swift; sourceTree = "<group>"; };
 		1F79AD83201A5D73003FA1E3 /* MonumentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonumentTableViewCell.xib; sourceTree = "<group>"; };
 		1F79AD88201A6479003FA1E3 /* Monument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monument.swift; sourceTree = "<group>"; };
+		1FBFA5C0201AB378009AB396 /* EditMonument.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditMonument.storyboard; sourceTree = "<group>"; };
+		1FBFA5C1201AB378009AB396 /* EditMonumentDisplayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMonumentDisplayData.swift; sourceTree = "<group>"; };
+		1FBFA5C2201AB378009AB396 /* EditMonumentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMonumentPresenter.swift; sourceTree = "<group>"; };
+		1FBFA5C3201AB378009AB396 /* EditMonumentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMonumentRouter.swift; sourceTree = "<group>"; };
+		1FBFA5C4201AB378009AB396 /* EditMonumentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMonumentInteractor.swift; sourceTree = "<group>"; };
+		1FBFA5C5201AB378009AB396 /* EditMonumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMonumentView.swift; sourceTree = "<group>"; };
 		34EF83F1BCE5DE8456BC9CD5 /* Pods-ForceManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForceManagerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForceManagerUITests/Pods-ForceManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3EF2F0CDD1A45B1381676F31 /* Pods-ForceManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForceManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForceManagerTests/Pods-ForceManagerTests.release.xcconfig"; sourceTree = "<group>"; };
 		4D6E900FCE4F7E12E2D7983C /* Pods-ForceManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForceManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForceManager/Pods-ForceManager.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,6 +178,7 @@
 			children = (
 				1F79AD7F201A5AC3003FA1E3 /* AppModules.swift */,
 				1F79AD7E201A5A9D003FA1E3 /* Monuments */,
+				1FBFA5BF201AB360009AB396 /* EditMonument */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -207,6 +220,19 @@
 				1F79AD88201A6479003FA1E3 /* Monument.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1FBFA5BF201AB360009AB396 /* EditMonument */ = {
+			isa = PBXGroup;
+			children = (
+				1FBFA5C0201AB378009AB396 /* EditMonument.storyboard */,
+				1FBFA5C1201AB378009AB396 /* EditMonumentDisplayData.swift */,
+				1FBFA5C2201AB378009AB396 /* EditMonumentPresenter.swift */,
+				1FBFA5C3201AB378009AB396 /* EditMonumentRouter.swift */,
+				1FBFA5C4201AB378009AB396 /* EditMonumentInteractor.swift */,
+				1FBFA5C5201AB378009AB396 /* EditMonumentView.swift */,
+			);
+			path = EditMonument;
 			sourceTree = "<group>";
 		};
 		9D86E1C7CB28E71EAB884FA9 /* Frameworks */ = {
@@ -353,6 +379,7 @@
 				1F79AD4B201A5918003FA1E3 /* Assets.xcassets in Resources */,
 				1F79AD49201A5918003FA1E3 /* Main.storyboard in Resources */,
 				1F79AD85201A5D73003FA1E3 /* MonumentTableViewCell.xib in Resources */,
+				1FBFA5C6201AB378009AB396 /* EditMonument.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,15 +556,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FBFA5CA201AB378009AB396 /* EditMonumentInteractor.swift in Sources */,
 				1F79AD84201A5D73003FA1E3 /* MonumentTableViewCell.swift in Sources */,
+				1FBFA5C9201AB378009AB396 /* EditMonumentRouter.swift in Sources */,
 				1F79AD7C201A5A8E003FA1E3 /* MonumentsInteractor.swift in Sources */,
 				1F79AD7A201A5A8E003FA1E3 /* MonumentsPresenter.swift in Sources */,
+				1FBFA5CB201AB378009AB396 /* EditMonumentView.swift in Sources */,
 				1F79AD89201A6479003FA1E3 /* Monument.swift in Sources */,
 				1F79AD44201A5918003FA1E3 /* AppDelegate.swift in Sources */,
 				1F79AD7B201A5A8E003FA1E3 /* MonumentsRouter.swift in Sources */,
 				1F79AD80201A5AC3003FA1E3 /* AppModules.swift in Sources */,
+				1FBFA5C8201AB378009AB396 /* EditMonumentPresenter.swift in Sources */,
 				1F79AD7D201A5A8E003FA1E3 /* MonumentsView.swift in Sources */,
 				1F79AD79201A5A8E003FA1E3 /* MonumentsDisplayData.swift in Sources */,
+				1FBFA5C7201AB378009AB396 /* EditMonumentDisplayData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
