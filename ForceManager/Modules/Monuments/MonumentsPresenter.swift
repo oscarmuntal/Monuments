@@ -23,8 +23,12 @@ class MonumentsPresenter: Presenter {
         return monuments
     }
     
-    func onMonumentTapped(_ monument: Monument) {
-        router.goToEditMonument(monument)
+    func onMonumentTapped(monument: Monument, rowEdited: Int, onSuccess: @escaping ObjectClosure<EditMonumentView>) {
+        router.goToEditMonument(monument: monument, rowEdited: rowEdited, onSuccess: onSuccess)
+    }
+    
+    func saveMonument(monument: Monument, row: Int) {
+        monuments[row] = monument
     }
 }
 

@@ -13,6 +13,8 @@ import CoreLocation
 class EditMonumentPresenter: Presenter {
     
     var monument: Monument?
+    var rowEdited: Int?
+    var onSuccess: ObjectClosure<EditMonumentView>?
     
     func setLatitude(_ latitude: String) {
         if let longitude = monument?.position?.coordinate.longitude {

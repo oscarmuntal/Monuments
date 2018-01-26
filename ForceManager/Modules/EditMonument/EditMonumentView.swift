@@ -11,6 +11,7 @@ import Viperit
 
 //MARK: - Public Interface Protocol
 protocol EditMonumentViewInterface {
+    func saveChanges(monument: Monument, rowEdited: Int)
 }
 
 //MARK: EditMonumentView Class
@@ -22,10 +23,11 @@ final class EditMonumentView: UserInterface {
     @IBOutlet weak var latitudeTextField: UITextField!
     @IBOutlet weak var longitudeTextField: UITextField!
     
-    
+    var delegate: EditMonumentViewInterface?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.onSuccess!(self)
         setUI()
     }
 }
@@ -45,6 +47,7 @@ extension EditMonumentView: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         print("TextField did end editing method called\(textField.text!)")
         saveContent(textField)
+        delegate?.saveChanges(monument: presenter.monument!, rowEdited: presenter.rowEdited!)
     }
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         print("TextField should begin editing method called")
@@ -115,11 +118,6 @@ extension EditMonumentView {
             presenter.monument?.name = textField.text ?? ""
         }
     }
-}
-
-
-//MARK: - Public interface
-extension EditMonumentView: EditMonumentViewInterface {
 }
 
 // MARK: - VIPER COMPONENTS API (Auto-generated code)

@@ -59,7 +59,9 @@ extension MonumentsView {
 extension MonumentsView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter.onMonumentTapped(presenter.monuments[indexPath.row])
+        presenter.onMonumentTapped(monument: presenter.monuments[indexPath.row], rowEdited: indexPath.row, onSuccess: { editMonumentViewController in
+            self.setEditMonumentDelegate(editMonumentViewController)
+        })
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -82,6 +84,17 @@ extension MonumentsView: CLLocationManagerDelegate {
     }
 }
 
+extension MonumentsView: EditMonumentViewInterface {
+    
+    func saveChanges(monument: Monument, rowEdited: Int) {
+        presenter.saveMonument(monument: monument, row: rowEdited)
+        tableView.reloadData()
+    }
+    
+    func setEditMonumentDelegate(_ editMonumentViewController: EditMonumentView) {
+        editMonumentViewController.delegate = self
+    }
+}
 
 //MARK: - Public interface
 extension MonumentsView: MonumentsViewInterface {
