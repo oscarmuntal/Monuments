@@ -92,6 +92,8 @@ extension EditMonumentView {
         for type in presenter.types {
             alert.addAction(UIAlertAction(title: type, style: .default, handler: { action in
                 self.typeButton.titleLabel?.text = type
+                self.presenter.monument?.type = type
+                self.delegate?.saveChanges(monument: self.presenter.monument!, rowEdited: self.presenter.rowEdited!)
             }))
         }
         alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))

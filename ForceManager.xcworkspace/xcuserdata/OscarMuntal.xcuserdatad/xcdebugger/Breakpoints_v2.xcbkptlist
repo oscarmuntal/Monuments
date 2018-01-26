@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ForceManager/Modules/EditMonument/EditMonumentView.swift"
-            timestampString = "538632103.058015"
+            timestampString = "538633385.143425"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "55"
@@ -26,71 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ForceManager/Modules/Monuments/MonumentsPresenter.swift"
-            timestampString = "538632103.058102"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "getTypeValues()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ForceManager.MonumentsPresenter.getTypeValues() -&gt; ()"
-                  moduleName = "ForceManager"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/OscarMuntal/Development/Empreses/_PROVES%20TE%CC%80CNIQUES/ForceManager/ForceManager/ForceManager/Modules/Monuments/MonumentsPresenter.swift"
-                  timestampString = "538632103.143919"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "14">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;SwiftyJSON.JSON&gt;) -&gt; () in ForceManager.MonumentsPresenter.getTypeValues() -&gt; ()"
-                  moduleName = "ForceManager"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/OscarMuntal/Development/Empreses/_PROVES%20TE%CC%80CNIQUES/ForceManager/ForceManager/ForceManager/Modules/Monuments/MonumentsPresenter.swift"
-                  timestampString = "538632103.146813"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "115">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ForceManager/Modules/Monuments/MonumentsPresenter.swift"
-            timestampString = "538632103.05847"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "getTypeValues()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ForceManager/Modules/Monuments/MonumentsPresenter.swift"
-            timestampString = "538632103.058719"
+            timestampString = "538633385.143598"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
@@ -106,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ForceManager/Modules/Monuments/MonumentsPresenter.swift"
-            timestampString = "538632103.058942"
+            timestampString = "538633385.144245"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "getTypeValues()"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ForceManager/Modules/Monuments/MonumentsPresenter.swift"
-            timestampString = "538632103.059299"
+            timestampString = "538633385.1446379"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "getTypeValues()"
             landmarkType = "7">
          </BreakpointContent>
@@ -138,45 +74,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ForceManager/Modules/Monuments/MonumentsPresenter.swift"
-            timestampString = "538632103.059557"
+            timestampString = "538633385.144961"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
             endingLineNumber = "51"
             landmarkName = "getTypeValues()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ForceManager.MonumentsPresenter.getTypeValues() -&gt; ()"
-                  moduleName = "ForceManager"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/OscarMuntal/Development/Empreses/_PROVES%20TE%CC%80CNIQUES/ForceManager/ForceManager/ForceManager/Modules/Monuments/MonumentsPresenter.swift"
-                  timestampString = "538632103.20749"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "50">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;ForceManager.APIError&gt;) -&gt; () in ForceManager.MonumentsPresenter.getTypeValues() -&gt; ()"
-                  moduleName = "ForceManager"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/OscarMuntal/Development/Empreses/_PROVES%20TE%CC%80CNIQUES/ForceManager/ForceManager/ForceManager/Modules/Monuments/MonumentsPresenter.swift"
-                  timestampString = "538632103.210258"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "12">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -185,46 +89,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ForceManager/Modules/Monuments/MonumentsInteractor.swift"
-            timestampString = "538632103.059877"
+            filePath = "ForceManager/Modules/Monuments/MonumentsPresenter.swift"
+            timestampString = "538633385.1453249"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "updateTypeValue(successBlock:errorBlock:)"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "getTypeValues()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ForceManager.MonumentsInteractor.updateTypeValue(successBlock: (Swift.Optional&lt;SwiftyJSON.JSON&gt;) -&gt; (), errorBlock: (Swift.Optional&lt;ForceManager.APIError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "ForceManager"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/OscarMuntal/Development/Empreses/_PROVES%20TE%CC%80CNIQUES/ForceManager/ForceManager/ForceManager/Modules/Monuments/MonumentsInteractor.swift"
-                  timestampString = "538632103.216287"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "460">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;SwiftyJSON.JSON&gt;) -&gt; () in ForceManager.MonumentsInteractor.updateTypeValue(successBlock: (Swift.Optional&lt;SwiftyJSON.JSON&gt;) -&gt; (), errorBlock: (Swift.Optional&lt;ForceManager.APIError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "ForceManager"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/OscarMuntal/Development/Empreses/_PROVES%20TE%CC%80CNIQUES/ForceManager/ForceManager/ForceManager/Modules/Monuments/MonumentsInteractor.swift"
-                  timestampString = "538632103.218642"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "144">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -233,13 +105,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ForceManager/Modules/Monuments/MonumentsInteractor.swift"
-            timestampString = "538632103.0600049"
+            filePath = "ForceManager/Modules/Monuments/MonumentsPresenter.swift"
+            timestampString = "538633385.1455899"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "updateTypeValue(successBlock:errorBlock:)"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "getTypeValues()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -250,12 +122,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ForceManager/Modules/Monuments/MonumentsInteractor.swift"
-            timestampString = "538632103.06011"
+            timestampString = "538633385.146041"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "updateTypeValue(successBlock:errorBlock:)"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "getTypes(successBlock:errorBlock:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -266,12 +138,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ForceManager/Modules/Monuments/MonumentsInteractor.swift"
-            timestampString = "538632103.060204"
+            timestampString = "538633385.146208"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "updateTypeValue(successBlock:errorBlock:)"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "getTypes(successBlock:errorBlock:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -282,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ForceManager/Network/ApiManager.swift"
-            timestampString = "538632103.0603141"
+            timestampString = "538633385.146289"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
@@ -298,7 +170,7 @@
                   moduleName = "ForceManager"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/OscarMuntal/Development/Empreses/_PROVES%20TE%CC%80CNIQUES/ForceManager/ForceManager/ForceManager/Network/ApiManager.swift"
-                  timestampString = "538632103.2420501"
+                  timestampString = "538633015.667676"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "28"
@@ -313,7 +185,7 @@
                   moduleName = "ForceManager"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/OscarMuntal/Development/Empreses/_PROVES%20TE%CC%80CNIQUES/ForceManager/ForceManager/ForceManager/Network/ApiManager.swift"
-                  timestampString = "538632103.244929"
+                  timestampString = "538633015.6705689"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "30"
@@ -330,7 +202,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ForceManager/Network/ApiManager.swift"
-            timestampString = "538632103.061379"
+            timestampString = "538633385.147462"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -346,7 +218,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ForceManager/Network/ApiManager.swift"
-            timestampString = "538632103.0620559"
+            timestampString = "538633385.147982"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
@@ -362,7 +234,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ForceManager/Network/ApiManager.swift"
-            timestampString = "538632103.062553"
+            timestampString = "538633385.148265"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
@@ -378,7 +250,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ForceManager/Network/ApiManager.swift"
-            timestampString = "538632103.063876"
+            timestampString = "538633385.148525"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"

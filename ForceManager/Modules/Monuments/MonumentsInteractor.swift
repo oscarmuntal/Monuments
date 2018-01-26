@@ -32,7 +32,8 @@ class MonumentsInteractor: Interactor {
         return sortedMonuments
     }
     
-    func updateTypeValue(successBlock: @escaping RequestSuccessBlock, errorBlock: @escaping RequestErrorBlock) {
+    func getTypes(successBlock: @escaping RequestSuccessBlock, errorBlock: @escaping RequestErrorBlock) {
+        
         let url = ApiManager.sharedInstance.baseURL + ApiManager.sharedInstance.typesEndpoint
         ApiManager.sharedInstance.get(path: url, successBlock: { response in
             if let response = response {

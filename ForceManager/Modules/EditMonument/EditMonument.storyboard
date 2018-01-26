@@ -178,7 +178,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6tq-uA-93B" userLabel="Type View">
-                                <rect key="frame" x="16" y="391" width="343" height="56"/>
+                                <rect key="frame" x="16" y="391" width="343" height="96"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHq-sF-PqM" userLabel="Type Label">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="21"/>
@@ -189,8 +189,11 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eS-Yb-EiA" userLabel="Type Button">
-                                        <rect key="frame" x="0.0" y="26" width="343" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eS-Yb-EiA" userLabel="Type Button">
+                                        <rect key="frame" x="0.0" y="26" width="343" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Nin-Vs-xI1"/>
+                                        </constraints>
                                         <state key="normal" title="Choose a type"/>
                                         <connections>
                                             <action selector="typeButtonAction:" destination="xqD-av-Raz" eventType="touchUpInside" id="IAY-W2-YW7"/>
