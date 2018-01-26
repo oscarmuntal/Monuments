@@ -11,4 +11,10 @@ import Viperit
 
 class EditMonumentDisplayData: DisplayData {
 
+    let editMonumentTitle = "Edit Monument"
+    let nameTag = 0
+    let descriptionTag = 1
+    let latitudeTag = 2
+    let longitudeTag = 3
+    
 }

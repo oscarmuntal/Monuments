@@ -17,17 +17,10 @@ class MonumentTableViewCell: UITableViewCell {
     
     func configure(monument: Monument) {
         nameLabel.text = monument.name
-        creationDateLabel.text = getCreationDate(monument.creation)
+        creationDateLabel.text = monument.creation?.getCreationDateString
         descriptionLabel.text = monument.description
         distanceLabel.text = String(describing: monument.distance)
     }
     
-    private func getCreationDate(_ date: Date?) -> String {
-        let dateformatter = DateFormatter()
-        dateformatter.dateStyle = DateFormatter.Style.short
-        dateformatter.timeStyle = DateFormatter.Style.short
-        guard let date = date else { return "" }
-        return dateformatter.string(from: date)
-    }
     
 }

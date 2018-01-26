@@ -8,10 +8,23 @@
 
 import Foundation
 import Viperit
+import CoreLocation
 
 class EditMonumentPresenter: Presenter {
     
     var monument: Monument?
+    
+    func setLatitude(_ latitude: String) {
+        if let longitude = monument?.position?.coordinate.longitude {
+            monument?.position = CLLocation(latitude: (latitude as NSString).doubleValue, longitude: longitude)
+        }
+    }
+    
+    func setLongitude(_ longitude: String) {
+        if let latitude = monument?.position?.coordinate.latitude {
+            monument?.position = CLLocation(latitude: latitude, longitude: (longitude as NSString).doubleValue)
+        }
+    }
 }
 
 

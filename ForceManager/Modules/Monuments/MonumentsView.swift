@@ -55,11 +55,12 @@ extension MonumentsView {
     
 }
 
-func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    
-}
 
 extension MonumentsView: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.onMonumentTapped(presenter.monuments[indexPath.row])
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return presenter.monuments.count
