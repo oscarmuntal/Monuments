@@ -36,10 +36,10 @@ class MonumentsPresenter: Presenter {
     func getTypeValues() {
         
         //Hardcoded types
-        self.types = ["Museum", "Square", "Shopping center", "Business office"]
+        //self.types = ["Museum", "Square", "Shopping center", "Business office"]
         
         //Code commented due sth weird happens in the ApiManager and it doesn't fetches the type results properly from the API
-        /*interactor.getTypes(successBlock: { response in
+        interactor.getTypes(successBlock: { response in
             if let response = response {
                 guard let results: [JSON] = response["typesList"].array else { return }
                 
@@ -53,7 +53,7 @@ class MonumentsPresenter: Presenter {
             }
         }) { error in
             //TODO Error treatment
-        }*/
+        }
     }
 }
 
