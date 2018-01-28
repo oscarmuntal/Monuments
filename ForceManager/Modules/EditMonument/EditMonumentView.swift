@@ -118,6 +118,7 @@ extension EditMonumentView {
         if let longitude = presenter.monument?.position?.coordinate.longitude {
             longitudeTextField.text = "\(String(describing: longitude))"
         }
+        typeButton.setTitle(presenter.monument?.type, for: .normal)
     }
     
     fileprivate func setTextFieldTags() {
