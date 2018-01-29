@@ -19,5 +19,13 @@ class AddMonumentDisplayData: DisplayData {
     
     let typesTitle = "Types List"
     let typesText = "Choose a type"
+    let cancelLabel = "Cancel"
     
+    let defaultNamePlaceholder = "Write a monument's name (this field is mandatory)"
+    let defaultDescriptionPlaceholder = "Write a monument's description (this field is optional)"
+    let defaultLatitudePlaceholder = "Write a monument's latitude (this field is optional)"
+    let defaultLongitudePlaceholder = "Write a monument's longitude (this field is optional)"
+    
+    let mandatoryNamePlaceholder = "Write a monument's name. This field is mandatory"
+    let mandatoryTypesLabel = "Choose a monument's type. This field is mandatory"
 }

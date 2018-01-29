@@ -19,10 +19,23 @@ class MonumentTableViewCell: UITableViewCell {
     func configure(monument: Monument) {
         nameLabel.text = monument.name
         creationDateLabel.text = monument.creation?.getCreationDateString
-        descriptionLabel.text = monument.description
-        distanceLabel.text = String(describing: monument.distance)
+        descriptionLabel.text = description(monument.description)
+        distanceLabel.text = distance(monument.distance)
         typeLabel.text = monument.type
     }
     
+    private func description(_ description: String) -> String {
+        if description == "" {
+            return "(This monument has no description)"
+        }
+        return description
+    }
+    
+    private func distance(_ distance: String) -> String {
+        if String(describing: distance) == "" {
+            return "(This monument has no distance parameter)"
+        }
+        return String(describing: distance)
+    }
     
 }

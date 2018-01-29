@@ -34,6 +34,20 @@ class AddMonumentPresenter: Presenter {
             return true
         } else { return false }
     }
+    
+    func isValidName() -> Bool {
+        if  let validMonument = self.monument,
+            validMonument.name != "" {
+            return true
+        } else { return false }
+    }
+    
+    func isValidType() -> Bool {
+        if  let validMonument = self.monument,
+            validMonument.validType == true {
+            return true
+        } else { return false }
+    }
 }
 
 

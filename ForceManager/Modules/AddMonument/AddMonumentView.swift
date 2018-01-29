@@ -50,6 +50,7 @@ extension AddMonumentView: UITextFieldDelegate {
         setTitle()
         setNewEmptyMonument()
         setTextFieldDelegates()
+        setPlaceholders()
         setTextFieldTexts()
         setTextFieldTags()
     }
@@ -101,12 +102,13 @@ extension AddMonumentView {
         
         for type in presenter.types {
             alert.addAction(UIAlertAction(title: type, style: .default, handler: { action in
-                self.typeButton.titleLabel?.text = type
+                self.typeButton.setTitle(type, for: .normal)
                 self.presenter.monument?.type = type
                 self.presenter.monument?.validType = true
+                self.typeButton.tintColor = UIColor.blue
             }))
         }
-        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: displayData.cancelLabel, style: UIAlertActionStyle.cancel, handler: nil))
         
         self.present(alert, animated: true, completion: nil)
     }
@@ -116,6 +118,13 @@ extension AddMonumentView {
         descriptionTextField.delegate = self
         latitudeTextField.delegate = self
         longitudeTextField.delegate = self
+    }
+    
+    fileprivate func setPlaceholders() {
+        self.nameTextField.placeholder = displayData.defaultNamePlaceholder
+        self.descriptionTextField.placeholder = displayData.defaultDescriptionPlaceholder
+        self.latitudeTextField.placeholder = displayData.defaultLatitudePlaceholder
+        self.longitudeTextField.placeholder = displayData.defaultLongitudePlaceholder
     }
     
     fileprivate func setTextFieldTexts() {
@@ -165,7 +174,20 @@ extension AddMonumentView {
             self.dismiss(animated: true, completion: nil)
         } else {
             //TODO: paint in red mandatory fields
+            showMandatoryFields()
             print("incomplete data!")
+        }
+    }
+    
+    private func showMandatoryFields() {
+        if !presenter.isValidName() {
+            self.nameTextField.attributedPlaceholder = NSAttributedString(string: displayData.mandatoryNamePlaceholder, attributes: [NSAttributedStringKey.foregroundColor: UIColor.red])
+        }
+        
+        if !presenter.isValidType() {
+//            self.typeButton.titleLabel?.text = displayData.mandatoryTypesLabel
+            typeButton.setTitle(displayData.mandatoryTypesLabel, for: .normal)
+            self.typeButton.tintColor = UIColor.red
         }
     }
 }
