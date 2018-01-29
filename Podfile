@@ -7,6 +7,7 @@ target 'ForceManager' do
   pod 'Viperit'
   pod 'SwiftyJSON'
   pod 'Alamofire', '~> 4.3'
+  pod 'Toast-Swift', '~> 3.0.1'
 
   target 'ForceManagerTests' do
     inherit! :search_paths

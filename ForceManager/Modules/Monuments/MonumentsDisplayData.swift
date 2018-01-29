@@ -13,5 +13,5 @@ class MonumentsDisplayData: DisplayData {
 
     let monumentTableViewCell = "MonumentTableViewCell"
     let screenName = "Monuments"
-    
+    let seconds = 15
 }

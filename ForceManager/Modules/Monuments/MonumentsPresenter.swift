@@ -15,10 +15,13 @@ class MonumentsPresenter: Presenter {
     
     var monuments: [Monument] = []
     var types: [String] = []
+    var currentLocation: CLLocation? 
     
     //temporary method for fake initial test
-    func generateMonumentsWithCurrentLocation(_ currentLocation: CLLocation) {
-        monuments = interactor.generateMonuments(currentLocation)
+    func generateMonumentsWithCurrentLocation() {
+        if let currentLocation = self.currentLocation {
+            monuments = interactor.generateMonuments(currentLocation)
+        }
     }
     
     func getMonuments() -> [Monument] {

@@ -9,6 +9,7 @@
 import UIKit
 import Viperit
 import CoreLocation
+import Toast_Swift
 
 //MARK: - Public Interface Protocol
 protocol MonumentsViewInterface {
@@ -19,11 +20,18 @@ final class MonumentsView: UserInterface {
     
     @IBOutlet weak var tableView: UITableView!
     var locationManager: CLLocationManager!
+    var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initLocationManager()
         presenter.getTypeValues()
+        setUI()
+        showCurrentLocationEvery(seconds: displayData.seconds)
+    }
+    
+    public func reloadTableView() {
+        self.tableView.reloadData()
     }
 }
 
@@ -33,6 +41,10 @@ extension MonumentsView {
         title  = displayData.screenName
         registerCells()
         removeExtraRows()
+        reloadData()
+    }
+    
+    private func reloadData() {
         tableView.reloadData()
     }
     
@@ -54,6 +66,20 @@ extension MonumentsView {
         }
     }
     
+    private func showCurrentLocationEvery(seconds: Int) {
+        timer = Timer.scheduledTimer(timeInterval: TimeInterval(seconds), target: self, selector: #selector(self.showCurrentLocation), userInfo: nil, repeats: true)
+    }
+    
+    @objc func showCurrentLocation() {
+        
+        if  let currentLocation = presenter.currentLocation {
+            let latitude = currentLocation.coordinate.latitude
+            let longitude = currentLocation.coordinate.longitude
+            self.view.makeToast("latitude: \(latitude) \nlongitude: \(longitude)")
+        } else {
+            print("Cacuts")
+        }
+    }
 }
 
 
@@ -79,9 +105,9 @@ extension MonumentsView: UITableViewDelegate, UITableViewDataSource {
 
 extension MonumentsView: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let location = locations.last! as CLLocation
-        presenter.generateMonumentsWithCurrentLocation(location)   //temporary method for fake initial test
-        setUI()
+        presenter.currentLocation = locations.last! as CLLocation
+        presenter.generateMonumentsWithCurrentLocation()
+        reloadData()
     }
 }
 
