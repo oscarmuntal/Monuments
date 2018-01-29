@@ -39,9 +39,24 @@ extension MonumentsView {
     
     fileprivate func setUI() {
         title  = displayData.screenName
+        setAddMonumentButton()
         registerCells()
         removeExtraRows()
         reloadData()
+    }
+    
+    private func setAddMonumentButton() {
+        let addMonumentButton = UIButton(type: .custom)
+        addMonumentButton.setTitle("Add Monument", for: .normal)
+        addMonumentButton.setTitleColor(.black, for: .normal)
+        addMonumentButton.frame = CGRect(x: 0, y: 0, width: 20, height: 21)
+        addMonumentButton.addTarget(self, action: #selector(addMonumentButtonAction), for: .touchUpInside)
+        let addMonumentItem = UIBarButtonItem(customView: addMonumentButton)
+        self.navigationItem.setRightBarButtonItems([addMonumentItem], animated: true)
+    }
+    
+    @objc private func addMonumentButtonAction(sender: UIButton!) {
+        print("Button tapped")
     }
     
     private func reloadData() {
