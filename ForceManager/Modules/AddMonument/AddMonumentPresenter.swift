@@ -1,8 +1,8 @@
 //
-//  EditMonumentPresenter.swift
+//  AddMonumentPresenter.swift
 //  ForceManager
 //
-//  Created by Òscar Muntal on 26/01/2018.
+//  Created by Òscar Muntal on 29/01/2018.
 //Copyright © 2018 Muntalapps. All rights reserved.
 //
 
@@ -10,11 +10,8 @@ import Foundation
 import Viperit
 import CoreLocation
 
-class EditMonumentPresenter: Presenter {
-    
+class AddMonumentPresenter: Presenter {
     var monument: Monument?
-    var rowEdited: Int?
-    var onSuccess: ObjectClosure<EditMonumentView>?
     var types: [String] = []
     
     func setLatitude(_ latitude: String) {
@@ -28,19 +25,18 @@ class EditMonumentPresenter: Presenter {
             monument?.position = CLLocation(latitude: latitude, longitude: (longitude as NSString).doubleValue)
         }
     }
-    
 }
 
 
 // MARK: - VIPER COMPONENTS API (Auto-generated code)
-private extension EditMonumentPresenter {
-    var view: EditMonumentViewInterface {
-        return _view as! EditMonumentViewInterface
+private extension AddMonumentPresenter {
+    var view: AddMonumentViewInterface {
+        return _view as! AddMonumentViewInterface
     }
-    var interactor: EditMonumentInteractor {
-        return _interactor as! EditMonumentInteractor
+    var interactor: AddMonumentInteractor {
+        return _interactor as! AddMonumentInteractor
     }
-    var router: EditMonumentRouter {
-        return _router as! EditMonumentRouter
+    var router: AddMonumentRouter {
+        return _router as! AddMonumentRouter
     }
 }

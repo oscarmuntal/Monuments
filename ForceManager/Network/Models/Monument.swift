@@ -28,6 +28,15 @@ class Monument {
         self.type = type
     }
     
+    init() {
+        self.name = ""
+        self.creation = Date()
+        self.description = ""
+        self.position = CLLocation()
+        self.distance = ""
+        self.type = "Select a type"
+    }
+    
     private func getDistanceFromUser(position: CLLocation, userLocation: CLLocation) -> String {
         let distanceInMeters = position.distance(from: userLocation)
         return "\(distanceWithTwoDecimals(distanceInMeters)) meters"

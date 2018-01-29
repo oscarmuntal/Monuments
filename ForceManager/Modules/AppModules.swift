@@ -13,4 +13,5 @@ import Viperit
 enum AppModules: String, ViperitModule {
     case Monuments
     case EditMonument
+    case AddMonument
 }

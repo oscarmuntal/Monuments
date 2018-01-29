@@ -56,7 +56,7 @@ extension MonumentsView {
     }
     
     @objc private func addMonumentButtonAction(sender: UIButton!) {
-        print("Button tapped")
+        presenter.onAddMonumentTapped()
     }
     
     private func reloadData() {
@@ -91,8 +91,6 @@ extension MonumentsView {
             let latitude = currentLocation.coordinate.latitude
             let longitude = currentLocation.coordinate.longitude
             self.view.makeToast("latitude: \(latitude) \nlongitude: \(longitude)")
-        } else {
-            print("Cacuts")
         }
     }
 }
@@ -135,6 +133,19 @@ extension MonumentsView: EditMonumentViewInterface {
     
     func setEditMonumentDelegate(_ editMonumentViewController: EditMonumentView) {
         editMonumentViewController.delegate = self
+    }
+    
+}
+
+extension MonumentsView: AddMonumentViewInterface {
+    
+    func saveMonument(monument: Monument) {
+        presenter.addMonument(monument: monument)
+        tableView.reloadData()
+    }
+    
+    func setAddMonumentDelegate(_ addMonumentViewController: AddMonumentView) {
+        addMonumentViewController.delegate = self
     }
 }
 

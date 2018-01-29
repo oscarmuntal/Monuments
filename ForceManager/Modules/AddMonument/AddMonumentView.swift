@@ -1,8 +1,8 @@
 //
-//  EditMonumentView.swift
+//  AddMonumentView.swift
 //  ForceManager
 //
-//  Created by Òscar Muntal on 26/01/2018.
+//  Created by Òscar Muntal on 29/01/2018.
 //Copyright © 2018 Muntalapps. All rights reserved.
 //
 
@@ -10,13 +10,14 @@ import UIKit
 import Viperit
 
 //MARK: - Public Interface Protocol
-protocol EditMonumentViewInterface {
-    func saveChanges(monument: Monument, rowEdited: Int)
+protocol AddMonumentViewInterface {
+    func saveMonument(monument: Monument)
 }
 
-//MARK: EditMonumentView Class
-final class EditMonumentView: UserInterface {
+//MARK: AddMonumentView Class
+final class AddMonumentView: UserInterface {
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var creationLabel: UILabel!
     @IBOutlet weak var descriptionTextField: UITextField!
@@ -28,22 +29,36 @@ final class EditMonumentView: UserInterface {
         typeButtonTapped()
     }
     
-    var delegate: EditMonumentViewInterface?
+    @IBAction func saveMonumentAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    var delegate: AddMonumentViewInterface?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.onSuccess!(self)
         setUI()
     }
+    
 }
 
-extension EditMonumentView: UITextFieldDelegate {
+
+extension AddMonumentView: UITextFieldDelegate {
     
     fileprivate func setUI() {
-        title = displayData.editMonumentTitle
+        setTitle()
+        setNewEmptyMonument()
         setTextFieldDelegates()
         setTextFieldTexts()
         setTextFieldTags()
+    }
+    
+    private func setTitle() {
+        self.titleLabel.text = displayData.addMonumentTitle
+    }
+    
+    private func setNewEmptyMonument() {
+        presenter.monument = Monument()
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -52,7 +67,7 @@ extension EditMonumentView: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         print("TextField did end editing method called\(textField.text!)")
         saveContent(textField)
-        delegate?.saveChanges(monument: presenter.monument!, rowEdited: presenter.rowEdited!)
+        delegate?.saveMonument(monument: presenter.monument!)
     }
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         print("TextField should begin editing method called")
@@ -77,7 +92,7 @@ extension EditMonumentView: UITextFieldDelegate {
     }
 }
 
-extension EditMonumentView {
+extension AddMonumentView {
     
     fileprivate func typeButtonTapped() {
         let alert = UIAlertController(title: displayData.typesTitle,
@@ -88,7 +103,7 @@ extension EditMonumentView {
             alert.addAction(UIAlertAction(title: type, style: .default, handler: { action in
                 self.typeButton.titleLabel?.text = type
                 self.presenter.monument?.type = type
-                self.delegate?.saveChanges(monument: self.presenter.monument!, rowEdited: self.presenter.rowEdited!)
+                self.delegate?.saveMonument(monument: self.presenter.monument!)
             }))
         }
         alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
@@ -124,6 +139,7 @@ extension EditMonumentView {
     }
     
     fileprivate func saveContent(_ textField: UITextField) {
+        
         switch textField.tag {
         case displayData.nameTag:
             presenter.monument?.name = textField.text ?? ""
@@ -143,12 +159,13 @@ extension EditMonumentView {
     }
 }
 
+
 // MARK: - VIPER COMPONENTS API (Auto-generated code)
-private extension EditMonumentView {
-    var presenter: EditMonumentPresenter {
-        return _presenter as! EditMonumentPresenter
+private extension AddMonumentView {
+    var presenter: AddMonumentPresenter {
+        return _presenter as! AddMonumentPresenter
     }
-    var displayData: EditMonumentDisplayData {
-        return _displayData as! EditMonumentDisplayData
+    var displayData: AddMonumentDisplayData {
+        return _displayData as! AddMonumentDisplayData
     }
 }

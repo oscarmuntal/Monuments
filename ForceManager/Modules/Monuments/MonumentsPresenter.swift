@@ -53,6 +53,14 @@ class MonumentsPresenter: Presenter {
             //TODO Error treatment
         }
     }
+    
+    func onAddMonumentTapped() {
+        router.goAddMonument(types: types)
+    }
+    
+    func addMonument(monument: Monument) {
+        self.monuments.append(monument)
+    }
 }
 
 
