@@ -21,25 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="md4-3m-agZ" userLabel="Title View">
-                                <rect key="frame" x="16" y="36" width="343" height="36"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhN-fB-ovD" userLabel="Title Label">
-                                        <rect key="frame" x="172" y="18" width="0.0" height="0.0"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="OhN-fB-ovD" firstAttribute="centerX" secondItem="md4-3m-agZ" secondAttribute="centerX" id="0ef-1n-xiM"/>
-                                    <constraint firstAttribute="height" constant="36" id="9FC-2o-Q3B"/>
-                                    <constraint firstItem="OhN-fB-ovD" firstAttribute="centerY" secondItem="md4-3m-agZ" secondAttribute="centerY" id="q2S-8h-AwW"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="roF-nw-ZOg" userLabel="Name View">
-                                <rect key="frame" x="16" y="72" width="343" height="56"/>
+                                <rect key="frame" x="16" y="40" width="343" height="56"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6m7-mH-WUq" userLabel="Name Label">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="21"/>
@@ -72,7 +55,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MeV-lx-dOs" userLabel="Creation Date View">
-                                <rect key="frame" x="16" y="148" width="343" height="47"/>
+                                <rect key="frame" x="16" y="116" width="343" height="47"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creation Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qA-D2-c3d" userLabel="Creation Date Label">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="21"/>
@@ -105,7 +88,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ygY-Mu-xQJ" userLabel="Description View">
-                                <rect key="frame" x="16" y="215" width="343" height="56"/>
+                                <rect key="frame" x="16" y="183" width="343" height="56"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlp-Vp-qZ5" userLabel="Description Label">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="21"/>
@@ -138,7 +121,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0eX-gF-TwS" userLabel="Location View">
-                                <rect key="frame" x="16" y="291" width="343" height="132"/>
+                                <rect key="frame" x="16" y="259" width="343" height="132"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location: Latitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afY-hM-N0L" userLabel="Location Latitude Label">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="21"/>
@@ -192,7 +175,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZ5-Fz-87U" userLabel="Type View">
-                                <rect key="frame" x="16" y="443" width="343" height="96"/>
+                                <rect key="frame" x="16" y="411" width="343" height="96"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gB-Rp-X0j" userLabel="Type Label">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="21"/>
@@ -251,23 +234,20 @@
                             <constraint firstItem="0eX-gF-TwS" firstAttribute="leading" secondItem="Hy8-4f-Zrc" secondAttribute="leading" constant="16" id="0o9-ua-D4X"/>
                             <constraint firstItem="ygY-Mu-xQJ" firstAttribute="leading" secondItem="Hy8-4f-Zrc" secondAttribute="leading" constant="16" id="24A-9j-nfq"/>
                             <constraint firstItem="vb6-4r-Epx" firstAttribute="top" secondItem="O3H-Vh-09g" secondAttribute="bottom" constant="20" id="35G-Kx-zPV"/>
-                            <constraint firstItem="md4-3m-agZ" firstAttribute="leading" secondItem="Hy8-4f-Zrc" secondAttribute="leading" constant="16" id="7eL-MA-AXe"/>
                             <constraint firstItem="CZ5-Fz-87U" firstAttribute="top" secondItem="0eX-gF-TwS" secondAttribute="bottom" constant="20" id="ICi-Ek-Eej"/>
                             <constraint firstAttribute="trailing" secondItem="MeV-lx-dOs" secondAttribute="trailing" constant="16" id="MoK-yv-Swv"/>
                             <constraint firstAttribute="trailing" secondItem="0eX-gF-TwS" secondAttribute="trailing" constant="16" id="PfP-9o-SRo"/>
                             <constraint firstAttribute="trailing" secondItem="CZ5-Fz-87U" secondAttribute="trailing" constant="16" id="RJT-eF-nOs"/>
-                            <constraint firstItem="roF-nw-ZOg" firstAttribute="top" secondItem="md4-3m-agZ" secondAttribute="bottom" id="THX-HL-Nm0"/>
                             <constraint firstItem="O3H-Vh-09g" firstAttribute="leading" secondItem="Hy8-4f-Zrc" secondAttribute="leading" constant="16" id="WHx-PY-afg"/>
                             <constraint firstItem="MeV-lx-dOs" firstAttribute="top" secondItem="roF-nw-ZOg" secondAttribute="bottom" constant="20" id="bSB-8k-JXt"/>
                             <constraint firstAttribute="trailing" secondItem="roF-nw-ZOg" secondAttribute="trailing" constant="16" id="bzf-UU-7b0"/>
-                            <constraint firstItem="md4-3m-agZ" firstAttribute="top" secondItem="EcR-ye-kTk" secondAttribute="bottom" constant="16" id="cft-Ji-3kX"/>
+                            <constraint firstItem="roF-nw-ZOg" firstAttribute="top" secondItem="EcR-ye-kTk" secondAttribute="bottom" constant="20" id="gJr-Ao-B97"/>
                             <constraint firstAttribute="trailing" secondItem="ygY-Mu-xQJ" secondAttribute="trailing" constant="16" id="htD-fq-cCo"/>
                             <constraint firstAttribute="trailing" secondItem="O3H-Vh-09g" secondAttribute="trailing" constant="16" id="mYU-bA-SYd"/>
                             <constraint firstItem="CZ5-Fz-87U" firstAttribute="leading" secondItem="Hy8-4f-Zrc" secondAttribute="leading" constant="16" id="nzL-6s-Rlv"/>
                             <constraint firstItem="0eX-gF-TwS" firstAttribute="top" secondItem="ygY-Mu-xQJ" secondAttribute="bottom" constant="20" id="p9h-7O-c0M"/>
                             <constraint firstItem="roF-nw-ZOg" firstAttribute="leading" secondItem="Hy8-4f-Zrc" secondAttribute="leading" constant="16" id="pkm-k8-pa8"/>
                             <constraint firstItem="ygY-Mu-xQJ" firstAttribute="top" secondItem="MeV-lx-dOs" secondAttribute="bottom" constant="20" id="sXR-eV-ctS"/>
-                            <constraint firstAttribute="trailing" secondItem="md4-3m-agZ" secondAttribute="trailing" constant="16" id="sp2-Xv-Dwz"/>
                             <constraint firstItem="MeV-lx-dOs" firstAttribute="leading" secondItem="Hy8-4f-Zrc" secondAttribute="leading" constant="16" id="zzz-D9-JjF"/>
                         </constraints>
                     </view>
@@ -277,7 +257,6 @@
                         <outlet property="latitudeTextField" destination="x4R-Cn-oAQ" id="6aI-9v-KIW"/>
                         <outlet property="longitudeTextField" destination="nT9-AQ-XFn" id="5zw-VN-miX"/>
                         <outlet property="nameTextField" destination="dgK-7f-geg" id="4Ml-SE-cAo"/>
-                        <outlet property="titleLabel" destination="OhN-fB-ovD" id="A2C-XD-eqN"/>
                         <outlet property="typeButton" destination="Qko-41-yn4" id="Nif-8i-Z3R"/>
                     </connections>
                 </viewController>

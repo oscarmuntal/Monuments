@@ -15,7 +15,7 @@ class AddMonumentRouter: Router {
         presenter.types = types
         presenter.onSuccess = onSuccess
         guard let vc = self.presenter._view else { return }
-        fromVC.present(vc, animated: true, completion: nil)
+        fromVC.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

@@ -17,7 +17,6 @@ protocol AddMonumentViewInterface {
 //MARK: AddMonumentView Class
 final class AddMonumentView: UserInterface {
     
-    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var creationLabel: UILabel!
     @IBOutlet weak var descriptionTextField: UITextField!
@@ -48,6 +47,7 @@ extension AddMonumentView: UITextFieldDelegate {
     
     fileprivate func setUI() {
         setTitle()
+        setCancelButton()
         setNewEmptyMonument()
         setTextFieldDelegates()
         setPlaceholders()
@@ -56,7 +56,16 @@ extension AddMonumentView: UITextFieldDelegate {
     }
     
     private func setTitle() {
-        self.titleLabel.text = displayData.addMonumentTitle
+        title = displayData.addMonumentTitle
+    }
+    
+    private func setCancelButton() {
+        let cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action:  #selector(cancelAction))
+        self.navigationItem.setLeftBarButton(cancelButton, animated: true)
+    }
+    
+    @objc private func cancelAction() {
+        navigationController?.popViewController(animated: true)
     }
     
     private func setNewEmptyMonument() {
@@ -171,7 +180,7 @@ extension AddMonumentView {
         if  presenter.validateMonument(),
             let monument = presenter.monument{
             delegate?.saveMonument(monument: monument)
-            self.dismiss(animated: true, completion: nil)
+            navigationController?.popViewController(animated: true)
         } else {
             //TODO: paint in red mandatory fields
             showMandatoryFields()
