@@ -54,8 +54,8 @@ class MonumentsPresenter: Presenter {
         }
     }
     
-    func onAddMonumentTapped() {
-        router.goAddMonument(types: types)
+    func onAddMonumentTapped(onSuccess: @escaping ObjectClosure<AddMonumentView>) {
+        router.goAddMonument(types: types, onSuccess: onSuccess)
     }
     
     func addMonument(monument: Monument) {

@@ -18,6 +18,7 @@ class Monument {
     var position: CLLocation?
     var distance = ""
     var type = ""
+    var validType: Bool = false
     
     init(name: String, description: String, position: CLLocation, userLocation: CLLocation, type: String) {
         self.name = name
@@ -26,6 +27,7 @@ class Monument {
         self.position = position
         self.distance = getDistanceFromUser(position: position, userLocation: userLocation)
         self.type = type
+        self.validType = true
     }
     
     init() {
@@ -35,6 +37,7 @@ class Monument {
         self.position = CLLocation()
         self.distance = ""
         self.type = "Select a type"
+        self.validType = false
     }
     
     private func getDistanceFromUser(position: CLLocation, userLocation: CLLocation) -> String {

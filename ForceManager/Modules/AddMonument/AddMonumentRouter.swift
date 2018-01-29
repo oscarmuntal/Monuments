@@ -11,8 +11,9 @@ import Viperit
 
 class AddMonumentRouter: Router {
     
-    func showAddMonument(fromVC: UIViewController, types: [String]) {
+    func showAddMonument(fromVC: UIViewController, types: [String], onSuccess: @escaping ObjectClosure<AddMonumentView>) {
         presenter.types = types
+        presenter.onSuccess = onSuccess
         guard let vc = self.presenter._view else { return }
         fromVC.present(vc, animated: true, completion: nil)
     }

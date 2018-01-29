@@ -18,11 +18,11 @@ class MonumentsRouter: Router {
         detailRouter.showEditMonument(monument: monument, rowEdited: rowEdited, fromVC: vc, types: types, onSuccess: onSuccess)
     }
     
-    func goAddMonument(types: [String]) {
+    func goAddMonument(types: [String], onSuccess: @escaping ObjectClosure<AddMonumentView>) {
         guard   let detailRouter = AppModules.AddMonument.build().router as? AddMonumentRouter,
             let vc = self.presenter._view else { return }
         
-        detailRouter.showAddMonument(fromVC: vc, types: types)
+        detailRouter.showAddMonument(fromVC: vc, types: types, onSuccess: onSuccess)
     }
 }
 

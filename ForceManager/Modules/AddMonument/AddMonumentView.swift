@@ -30,16 +30,17 @@ final class AddMonumentView: UserInterface {
     }
     
     @IBAction func saveMonumentAction(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        saveMonumentTapped()
     }
     
     var delegate: AddMonumentViewInterface?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.onSuccess!(self)
         setUI()
     }
-    
+
 }
 
 
@@ -67,7 +68,6 @@ extension AddMonumentView: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         print("TextField did end editing method called\(textField.text!)")
         saveContent(textField)
-        delegate?.saveMonument(monument: presenter.monument!)
     }
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         print("TextField should begin editing method called")
@@ -103,7 +103,7 @@ extension AddMonumentView {
             alert.addAction(UIAlertAction(title: type, style: .default, handler: { action in
                 self.typeButton.titleLabel?.text = type
                 self.presenter.monument?.type = type
-                self.delegate?.saveMonument(monument: self.presenter.monument!)
+                self.presenter.monument?.validType = true
             }))
         }
         alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
@@ -155,6 +155,17 @@ extension AddMonumentView {
             }
         default:
             presenter.monument?.name = textField.text ?? ""
+        }
+    }
+    
+    fileprivate func saveMonumentTapped() {
+        if  presenter.validateMonument(),
+            let monument = presenter.monument{
+            delegate?.saveMonument(monument: monument)
+            self.dismiss(animated: true, completion: nil)
+        } else {
+            //TODO: paint in red mandatory fields
+            print("incomplete data!")
         }
     }
 }

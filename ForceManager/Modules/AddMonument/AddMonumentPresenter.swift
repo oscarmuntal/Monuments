@@ -13,6 +13,7 @@ import CoreLocation
 class AddMonumentPresenter: Presenter {
     var monument: Monument?
     var types: [String] = []
+    var onSuccess: ObjectClosure<AddMonumentView>?
     
     func setLatitude(_ latitude: String) {
         if let longitude = monument?.position?.coordinate.longitude {
@@ -24,6 +25,14 @@ class AddMonumentPresenter: Presenter {
         if let latitude = monument?.position?.coordinate.latitude {
             monument?.position = CLLocation(latitude: latitude, longitude: (longitude as NSString).doubleValue)
         }
+    }
+    
+    func validateMonument() -> Bool {
+        if  let validMonument = self.monument,
+            validMonument.name != "",
+            validMonument.validType == true {
+            return true
+        } else { return false }
     }
 }
 

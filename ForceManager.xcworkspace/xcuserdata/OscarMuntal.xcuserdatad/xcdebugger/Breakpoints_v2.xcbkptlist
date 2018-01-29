@@ -9,29 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ForceManager/Modules/EditMonument/EditMonumentView.swift"
-            timestampString = "538936843.042363"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "textFieldDidEndEditing(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "ForceManager/Modules/AddMonument/AddMonumentView.swift"
-            timestampString = "538936843.042528"
+            timestampString = "538938677.646879"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "saveMonumentAction(_:)"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "setTextFieldDelegates()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

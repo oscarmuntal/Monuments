@@ -56,7 +56,9 @@ extension MonumentsView {
     }
     
     @objc private func addMonumentButtonAction(sender: UIButton!) {
-        presenter.onAddMonumentTapped()
+        presenter.onAddMonumentTapped(onSuccess: { addMonumentViewController in
+            self.setAddMonumentDelegate(addMonumentViewController)
+        })
     }
     
     private func reloadData() {
