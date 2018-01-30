@@ -45,33 +45,6 @@ final class AddMonumentView: UserInterface {
 
 extension AddMonumentView: UITextFieldDelegate {
     
-    fileprivate func setUI() {
-        setTitle()
-        setCancelButton()
-        setNewEmptyMonument()
-        setTextFieldDelegates()
-        setPlaceholders()
-        setTextFieldTexts()
-        setTextFieldTags()
-    }
-    
-    private func setTitle() {
-        title = displayData.addMonumentTitle
-    }
-    
-    private func setCancelButton() {
-        let cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action:  #selector(cancelAction))
-        self.navigationItem.setLeftBarButton(cancelButton, animated: true)
-    }
-    
-    @objc private func cancelAction() {
-        navigationController?.popViewController(animated: true)
-    }
-    
-    private func setNewEmptyMonument() {
-        presenter.monument = Monument()
-    }
-    
     func textFieldDidBeginEditing(_ textField: UITextField) {
         print("TextField did begin editing method called")
     }
@@ -104,6 +77,32 @@ extension AddMonumentView: UITextFieldDelegate {
 
 extension AddMonumentView {
     
+    fileprivate func setUI() {
+        setTitle()
+        setCancelButton()
+        setNewEmptyMonument()
+        setTextFieldDelegates()
+        setPlaceholders()
+        setTextFieldTags()
+    }
+    
+    private func setTitle() {
+        title = displayData.addMonumentTitle
+    }
+    
+    private func setCancelButton() {
+        let cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action:  #selector(cancelAction))
+        self.navigationItem.setLeftBarButton(cancelButton, animated: true)
+    }
+    
+    @objc private func cancelAction() {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    private func setNewEmptyMonument() {
+        presenter.monument = Monument()
+    }
+    
     fileprivate func typeButtonTapped() {
         let alert = UIAlertController(title: displayData.typesTitle,
                                       message: displayData.typesText,
@@ -134,19 +133,6 @@ extension AddMonumentView {
         self.descriptionTextField.placeholder = displayData.defaultDescriptionPlaceholder
         self.latitudeTextField.placeholder = displayData.defaultLatitudePlaceholder
         self.longitudeTextField.placeholder = displayData.defaultLongitudePlaceholder
-    }
-    
-    fileprivate func setTextFieldTexts() {
-        nameTextField.text = presenter.monument?.name
-        creationLabel.text = presenter.monument?.creation?.getCreationDateString
-        descriptionTextField.text = presenter.monument?.description
-        if let latitude = presenter.monument?.position?.coordinate.latitude {
-            latitudeTextField.text = "\(String(describing: latitude))"
-        }
-        if let longitude = presenter.monument?.position?.coordinate.longitude {
-            longitudeTextField.text = "\(String(describing: longitude))"
-        }
-        typeButton.setTitle(presenter.monument?.type, for: .normal)
     }
     
     fileprivate func setTextFieldTags() {
@@ -182,9 +168,7 @@ extension AddMonumentView {
             delegate?.saveMonument(monument: monument)
             navigationController?.popViewController(animated: true)
         } else {
-            //TODO: paint in red mandatory fields
             showMandatoryFields()
-            print("incomplete data!")
         }
     }
     
@@ -194,7 +178,6 @@ extension AddMonumentView {
         }
         
         if !presenter.isValidType() {
-//            self.typeButton.titleLabel?.text = displayData.mandatoryTypesLabel
             typeButton.setTitle(displayData.mandatoryTypesLabel, for: .normal)
             self.typeButton.tintColor = UIColor.red
         }
